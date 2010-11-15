@@ -194,7 +194,7 @@ msgstr ""
 
 #: templates/base.html:6 templates/themed_base.html:42
 msgid "Visaineri Analyzer"
-msgstr ""
+msgstr "Visaineri Analyser"
 
 #: templates/contact_us.html:3 templates/contact_us.html.py:17
 #: templates/themed_base.html:70 templates/themed_base.html.py:121
