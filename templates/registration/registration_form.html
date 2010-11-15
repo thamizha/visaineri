@@ -1,0 +1,23 @@
+{% extends "registration/auth_base.html" %}
+{% load i18n %}
+{% block title %} {% trans "Sign Up" %} {% endblock %}
+
+{% block content %}
+{% if form.errors %}
+    <div class="errors">
+        <p>{% trans "Errors while submitting form" %}</p>
+    </div>
+    <br>
+{% endif %}
+<h1>{% trans "Join" %}</h1>
+<form action="" method="post">
+{% csrf_token %}
+    <fieldset>
+	    <legend>{% trans "Create a new account" %}</legend>
+	    <table>
+            {{ form.as_table }}
+        </table>
+        <p><input type="submit" name="bsignup'" value="{% trans "Sign up" %}"> </p>
+    </fieldset>
+</form>
+{% endblock %}

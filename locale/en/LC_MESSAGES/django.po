@@ -1,0 +1,568 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-07 10:56+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: registration/admin.py:23
+msgid "Activate users"
+msgstr ""
+
+#: registration/admin.py:43
+msgid "Re-send activation emails"
+msgstr ""
+
+#: registration/forms.py:38 templates/themed_base.html:97
+msgid "Username"
+msgstr ""
+
+#: registration/forms.py:39
+msgid "This value must contain only letters, numbers and underscores."
+msgstr ""
+
+#: registration/forms.py:42
+msgid "Email address"
+msgstr ""
+
+#: registration/forms.py:44 templates/themed_base.html:99
+msgid "Password"
+msgstr ""
+
+#: registration/forms.py:46
+msgid "Password (again)"
+msgstr ""
+
+#: registration/forms.py:58
+msgid "A user with that username already exists."
+msgstr ""
+
+#: registration/forms.py:70
+msgid "The two password fields didn't match."
+msgstr ""
+
+#: registration/forms.py:81
+msgid "I have read and agree to the Terms of Service"
+msgstr ""
+
+#: registration/forms.py:82
+msgid "You must agree to the terms to register"
+msgstr ""
+
+#: registration/forms.py:98
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr ""
+
+#: registration/forms.py:125
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+
+#: registration/models.py:168
+msgid "user"
+msgstr ""
+
+#: registration/models.py:169
+msgid "activation key"
+msgstr ""
+
+#: registration/models.py:174
+msgid "registration profile"
+msgstr ""
+
+#: registration/models.py:175
+msgid "registration profiles"
+msgstr ""
+
+#: templates/403.html:4
+msgid "You are not authorized to perform this operation"
+msgstr ""
+
+#: templates/403.html:6 templates/registration/auth_base.html:7
+msgid "&laquo; Back to Home"
+msgstr ""
+
+#: templates/about_us.html:3 templates/about_us.html.py:17
+#: templates/themed_base.html:69 templates/themed_base.html.py:120
+msgid "About Us"
+msgstr ""
+
+#: templates/about_us.html:18
+msgid ""
+"\n"
+"\"Visaineri\" is created on the basis of rules governing the tamil grammar. "
+"When a Verse is entered, it is parsed with grammar rules which we have "
+"specified in Backus-Naur format and if succeeds, the Verse will be displayed "
+"with its constituents like Character, Syllable, Word, Line, etc... in XML "
+"format.\n"
+msgstr ""
+
+#: templates/about_us.html:23
+msgid ""
+"\n"
+"Visaineri is built on Python's <a href=\"http://pages.cpsc.ucalgary.ca/"
+"~aycock/spark/\">SPARK Parser framework</a>\n"
+msgstr ""
+
+#: templates/author_create.html:14
+msgid "New Author Form"
+msgstr ""
+
+#: templates/author_create.html:21 templates/author_edit.html:30
+msgid "Save Changes"
+msgstr ""
+
+#: templates/author_detail.html:12 templates/author_edit.html:11
+#, python-format
+msgid "Verses written by %(author)s:"
+msgstr ""
+
+#: templates/author_detail.html:14 templates/author_edit.html:13
+#: templates/index.html:56 templates/verse_detail.html:21
+#: templates/verse_index.html:20
+msgid "Analysis Results"
+msgstr ""
+
+#: templates/author_detail.html:24 templates/verse_detail.html:9
+msgid "Edit"
+msgstr ""
+
+#: templates/author_detail.html:30
+msgid "No information about the author is available."
+msgstr ""
+
+#: templates/author_edit.html:23
+#, python-format
+msgid "%(author)s Editing Form"
+msgstr ""
+
+#: templates/author_index.html:5 templates/author_index.html.py:22
+#: templates/themed_base.html:68 templates/themed_base.html.py:119
+msgid "Verse Authors"
+msgstr ""
+
+#: templates/author_index.html:23
+msgid "This page contains the list of all Authors who have written Verses"
+msgstr ""
+
+#: templates/author_index.html:26
+msgid "Author Search"
+msgstr ""
+
+#: templates/author_index.html:26
+msgid "Enter a few characters of the Author name"
+msgstr ""
+
+#: templates/author_index.html:27 templates/themed_base.html:59
+msgid "Search"
+msgstr ""
+
+#: templates/author_index.html:27
+msgid "Start Author Search"
+msgstr ""
+
+#: templates/author_index.html:31
+#, python-format
+msgid "You searched for: %(q)s"
+msgstr ""
+
+#: templates/author_index.html:52
+msgid "Author Name"
+msgstr ""
+
+#: templates/author_index.html:53
+msgid "Joined Date"
+msgstr ""
+
+#: templates/author_index.html:54
+msgid "Verses written"
+msgstr ""
+
+#: templates/base.html:6 templates/themed_base.html:42
+msgid "Visaineri Analyzer"
+msgstr ""
+
+#: templates/contact_us.html:3 templates/contact_us.html.py:17
+#: templates/themed_base.html:70 templates/themed_base.html.py:121
+msgid "Contact Us"
+msgstr ""
+
+#: templates/contact_us.html:18
+msgid ""
+"\n"
+"For queries and comments regarding Visaineri, please use our Email address.\n"
+msgstr ""
+
+#: templates/contact_us.html:23
+msgid "Email Address"
+msgstr ""
+
+#: templates/contact_us.html:24
+msgid "Twitter"
+msgstr ""
+
+#: templates/contact_us.html:25
+msgid "Facebook"
+msgstr ""
+
+#: templates/index.html:3 templates/themed_base.html:66
+#: templates/themed_base.html.py:117
+msgid "Homepage"
+msgstr ""
+
+#: templates/index.html:34 templates/verse_edit.html:29
+msgid "Use Tamil Phonetic Keyboard"
+msgstr ""
+
+#: templates/index.html:40 templates/index.html.py:82
+#: templates/verse_edit.html:35 templates/verse_edit.html.py:71
+msgid "Hide Tamil Phonetic Keyboard"
+msgstr ""
+
+#: templates/index.html:55 templates/verse_detail.html:10
+#: templates/verse_edit.html:47 templates/verse_index.html:19
+msgid "Anonymous"
+msgstr ""
+
+#: templates/index.html:79 templates/verse_edit.html:68
+msgid "Toggle Rules for Punctuation"
+msgstr ""
+
+#: templates/index.html:89 templates/verse_edit.html:78
+msgid "Submit Verse"
+msgstr ""
+
+#: templates/index.html:95
+msgid "You need to create a Profile in order to upload new verses."
+msgstr ""
+
+#: templates/index.html:96 templates/themed_base.html:86
+msgid "Create Profile"
+msgstr ""
+
+#: templates/index.html:99
+msgid "In order to upload your Verse you need to be logged in"
+msgstr ""
+
+#: templates/index.html:100 templates/themed_base.html:101
+msgid "Login"
+msgstr ""
+
+#: templates/index.html:102
+msgid "Don't have an User account? Please Register here: "
+msgstr ""
+
+#: templates/index.html:103
+msgid "Register"
+msgstr ""
+
+#: templates/index.html:107 templates/verse_edit.html:85
+msgid "Rules for Punctuation"
+msgstr ""
+
+#: templates/index.html:109 templates/verse_edit.html:87
+msgid ""
+"There should not be any punctuation characters like full stop, comma, "
+"semicolon or exclamation mark."
+msgstr ""
+
+#: templates/index.html:110 templates/verse_edit.html:88
+msgid "Author Name/Signature should not be entered along with the verse."
+msgstr ""
+
+#: templates/themed_base.html:58
+msgid "Search Verse"
+msgstr ""
+
+#: templates/themed_base.html:58
+msgid "Enter a few words of the verse"
+msgstr ""
+
+#: templates/themed_base.html:59
+msgid "Start searching for Verses"
+msgstr ""
+
+#: templates/themed_base.html:67 templates/themed_base.html.py:118
+#: templates/verse_index.html:3
+msgid "Verses"
+msgstr ""
+
+#: templates/themed_base.html:80
+msgid "Hi, "
+msgstr ""
+
+#: templates/themed_base.html:83
+msgid "View Profile"
+msgstr ""
+
+#: templates/themed_base.html:84
+msgid "Edit Profile"
+msgstr ""
+
+#: templates/themed_base.html:88
+msgid "Change Password"
+msgstr ""
+
+#: templates/themed_base.html:89
+msgid "Logout"
+msgstr ""
+
+#: templates/themed_base.html:94
+msgid "Member"
+msgstr ""
+
+#: templates/themed_base.html:98
+msgid "Username for Login"
+msgstr ""
+
+#: templates/themed_base.html:100
+msgid "Password for Login"
+msgstr ""
+
+#: templates/themed_base.html:104
+msgid "New User?"
+msgstr ""
+
+#: templates/themed_base.html:124
+msgid ""
+"Visaineri.net is licensed under a <a rel=\"license\" href=\"http://"
+"creativecommons.org/licenses/by/2.5/in/\">Creative Commons Attribution 2.5 "
+"India License</a>."
+msgstr ""
+
+#: templates/themed_base.html:125
+msgid ""
+"Design adapted from <a href=\"http://www.worldclasslasik.com\">new york "
+"lasik surgery</a> and <a href=\"http://www.getnetset.com\">cpa website "
+"design</a>"
+msgstr ""
+
+#: templates/themed_base.html:125
+msgid ""
+"Validate <a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
+"&amp; <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
+msgstr ""
+
+#: templates/verse_detail.html:9 templates/verse_edit.html:46
+msgid "Verse"
+msgstr ""
+
+#: templates/verse_detail.html:16 templates/verse_edit.html:53
+msgid "Details"
+msgstr ""
+
+#: templates/verse_detail.html:17 templates/verse_edit.html:54
+msgid "Verse Publishing Date"
+msgstr ""
+
+#: templates/verse_detail.html:18 templates/verse_edit.html:55
+msgid "Verse Revision Date"
+msgstr ""
+
+#: templates/verse_detail.html:22
+msgid "Parsing Status"
+msgstr ""
+
+#: templates/verse_detail.html:30
+msgid "User Comments"
+msgstr ""
+
+#: templates/verse_detail.html:42
+msgid ""
+"Please enable JavaScript to view the <a href=\"http://disqus.com/?"
+"ref_noscript=visaineri8001\">comments powered by Disqus.</a>"
+msgstr ""
+
+#: templates/verse_detail.html:43
+msgid "Comments powered by <span class=\"logo-disqus\">Disqus</span>"
+msgstr ""
+
+#: templates/pagination/pagination.html:5
+#: templates/pagination/pagination.html:7
+msgid "previous"
+msgstr ""
+
+#: templates/pagination/pagination.html:21
+#: templates/pagination/pagination.html:23
+msgid "next"
+msgstr ""
+
+#: templates/registration/login.html:3 templates/registration/login.html:12
+msgid "Log In"
+msgstr ""
+
+#: templates/registration/login.html:8
+#: templates/registration/registration_form.html:8
+msgid "Errors while submitting form"
+msgstr ""
+
+#: templates/registration/login.html:16 templates/registration/login.html:20
+msgid "Sign In"
+msgstr ""
+
+#: templates/registration/login.html:21
+msgid "Forgot your Password?"
+msgstr ""
+
+#: templates/registration/logout.html:3 templates/registration/logout.html:5
+msgid "Logged Out"
+msgstr ""
+
+#: templates/registration/password_change_done.html:3
+#: templates/registration/password_change_done.html:7
+msgid "Password change successful"
+msgstr ""
+
+#: templates/registration/password_change_done.html:9
+msgid "Your password was changed."
+msgstr ""
+
+#: templates/registration/password_change_form.html:4
+#: templates/registration/password_change_form.html:8
+msgid "Password change"
+msgstr ""
+
+#: templates/registration/password_change_form.html:10
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: templates/registration/password_change_form.html:15
+msgid "Old password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:17
+#: templates/registration/password_reset_confirm.html:16
+msgid "New password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:19
+#: templates/registration/password_reset_confirm.html:18
+msgid "Confirm password:"
+msgstr ""
+
+#: templates/registration/password_change_form.html:21
+#: templates/registration/password_reset_confirm.html:19
+msgid "Change my password"
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:4
+#: templates/registration/password_reset_complete.html:8
+msgid "Password reset complete"
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:10
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:12
+msgid "Log in"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:8
+msgid "Password reset"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:12
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:24
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:26
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:4
+#: templates/registration/password_reset_done.html:8
+msgid "Password reset successful"
+msgstr ""
+
+#: templates/registration/password_reset_done.html:10
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:2
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:3
+#, python-format
+msgid "for your user account at %(site_name)s"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:5
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:9
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:11
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:13
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:10
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:15
+msgid "E-mail address:"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:15
+msgid "Reset my password"
+msgstr ""
+
+#: templates/registration/registration_form.html:3
+msgid "Sign Up"
+msgstr ""
+
+#: templates/registration/registration_form.html:12
+msgid "Join"
+msgstr ""
+
+#: templates/registration/registration_form.html:16
+msgid "Create a new account"
+msgstr ""
+
+#: templates/registration/registration_form.html:20
+msgid "Sign up"
+msgstr ""

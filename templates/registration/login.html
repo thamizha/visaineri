@@ -1,0 +1,25 @@
+{% extends "registration/auth_base.html" %}
+{% load i18n %}
+{% block title %} {% trans "Log In" %} {% endblock %}
+
+{% block content %}
+{% if form.errors %}
+    <div class="errors">
+        <p>{% trans "Errors while submitting form" %}</p>
+    </div>
+    <br>
+{% endif %}
+<h1>{% trans "Log In" %}</h1>
+<form action="{% url auth_login %}" method="post">
+{% csrf_token %}
+    <fieldset>
+	    <legend>{% trans "Sign In" %}</legend>
+	    <table>
+            {{ form.as_table }}
+        </table>
+        <p><input type="submit" name="bsignin'" value="{% trans "Sign In" %}"> </p>
+    <a href="{% url auth_password_reset %}">{% trans "Forgot your Password?" %}</a>
+    </fieldset>
+    <input type="hidden" name="next" value="{{ next }}" />
+</form>
+{% endblock %}

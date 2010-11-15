@@ -1,0 +1,33 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Contact Us" %}{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+
+{% block themed_head %}
+<script type="text/javascript">
+$(document).ready(function (){
+    $('.menu li:nth-child(5)').addClass('current');
+});
+</script>
+{% endblock %}
+
+{% block slider %}
+<section>
+<header>{% trans "Contact Us" %}</header>
+<p>
+{% blocktrans %}
+For queries and comments regarding Visaineri, please use our Email address.
+{% endblocktrans %}
+<pre>
+        {% trans "Email Address" %} : <a href="mailto:contact@visaineri.net">contact@visaineri.net</a>
+        {% trans "Twitter" %} : <a href="http://twitter.com/visaineri">@visaineri</a>
+        {% trans "Facebook" %} : <a href="http://www.facebook.com/pages/Visaineri/138698809479006?v=info">http://www.facebook.com/pages/Visaineri/138698809479006?v=info</a>
+</pre>
+</p>
+</section>
+{% endblock %}
+
+{% block main_article %}
+
+{% endblock %}

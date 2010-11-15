@@ -1,0 +1,27 @@
+# copy to localsettings.py and modify accordingly
+
+# DEBUG = True to get detailed Debug information
+# Set DEBUG = False in production system
+
+DEBUG = False
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'visaineri',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+# Email Settings, for Account Verification
+EMAIL_HOST = 'mail.visaineri.net'
+
+#Enter any random key that will be used to salt the passwords.
+SECRET_KEY = '^^e^v30mm#c(==83o_vj@tcanz023g2a5%^6u^gb5$x@o##qa(' 
+
+# Caching
+
+CACHE_BACKEND = "dummy:///"

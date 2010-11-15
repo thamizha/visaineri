@@ -1,0 +1,32 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "About Us" %}{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+
+{% block themed_head %}
+<script type="text/javascript">
+$(document).ready(function (){
+    $('.menu li:nth-child(4)').addClass('current');
+});
+</script>
+{% endblock %}
+
+{% block slider %}
+<section>
+<header>{% trans "About Us" %}</header>
+<p>
+{% blocktrans %}
+"Visaineri" is created on the basis of rules governing the tamil grammar. When a Verse is entered, it is parsed with grammar rules which we have specified in Backus-Naur format and if succeeds, the Verse will be displayed with its constituents like Character, Syllable, Word, Line, etc... in XML format.
+{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}
+Visaineri is built on Python's <a href="http://pages.cpsc.ucalgary.ca/~aycock/spark/">SPARK Parser framework</a>
+{% endblocktrans %}
+</p>
+</section>
+{% endblock %}
+
+{% block main_article %}
+{% endblock %}

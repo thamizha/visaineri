@@ -1,0 +1,8 @@
+{% extends "registration/auth_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Logged Out" %}{% endblock %}
+{% block content %}
+<h1>{% trans "Logged Out" %}</h1>
+<p>{% block trans %}You have logged out of the site. Thanks for spending some quality time with the Web site today.{% endblock %}</p>
+<br/>
+{% endblock %}

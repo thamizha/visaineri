@@ -1,0 +1,287 @@
+body {
+	margin-bottom: 0px;
+	background-color: #545700;
+}
+td, textarea, input, select {
+	font-family: Tahoma;
+	font-size: 10px;
+	color: 6f6f6f;
+	font-weight: normal;
+	line-height: 14px;
+}
+
+.frame {
+	border: 1px solid #006633;
+	background:#cfd27c;
+}
+
+.text1 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: 7f1e1d;
+	font-weight: bold;
+}
+.text2 {
+	font-family: tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	color: 7f1e1d;
+}
+.text3 {
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: 675f48;
+}
+.text4 {
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: 3e6641;
+}
+.text5 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 67767a;
+}
+.text6 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.text7 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+}
+.text8 {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 94AEC5;
+}
+.text9 {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 4E4E4E;
+}
+
+a:link {
+	color: fff;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+
+}
+a:visited {
+	color: fff;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: fff;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+a.a:link {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 7f1e1d;
+	text-decoration: none;
+}
+a.a:visited {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 7f1e1d;
+	text-decoration: none;
+}
+a.a:hover {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 14px;
+}
+
+a.b:link {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 898989;
+	text-decoration: none;
+}
+a.b:visited {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 898989;
+	text-decoration: none;
+}
+a.b:hover {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #839B2E;
+	text-decoration: none;
+}
+
+a.c:link {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 71A2CB;
+	text-decoration: none;
+}
+a.c:visited {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 71A2CB;
+	text-decoration: none;
+}
+a.c:hover {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 71A2CB;
+	text-decoration: underline;
+}
+
+a.d:link {
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.d:visited {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.d:hover {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+a.e:link {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 71A2CB;
+	text-decoration: underline;
+}
+a.e:visited {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 71A2CB;
+	text-decoration: underline;
+}
+a.e:hover {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #81992B;
+	text-decoration: none;
+}
+
+a.f:link {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 898989;
+	text-decoration: underline;
+}
+a.f:visited {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 898989;
+	text-decoration: underline;
+}
+a.f:hover {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #81992B;
+	text-decoration: none;
+}
+
+a.g:link {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+a.g:visited {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+a.g:hover {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: underline;
+}
+
+.inputstyle {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #5F726F;
+	background-color: #E2EDEB;
+	border: 1px solid #333333;
+}

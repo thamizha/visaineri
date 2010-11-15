@@ -1,0 +1,39 @@
+{% extends "themed_base.html" %}
+
+{% load pagination_tags %}
+
+{% block title %}தேடல்: {{ q }}{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+{% block slider %}
+நீங்கள் தேடியது:
+ {{q}}
+{% endblock %}
+
+{% block themed_head %}
+<script type="text/javascript">
+   $(document).ready(function (){
+      $('#searchfield').attr('value', '{{ q }}');
+   });
+</script>
+{% endblock %}
+
+{% block main_article %}
+<section id="found_verses">
+{% if found_verses %}
+<header>தேடல் முடிவுகள் : {{ found_verses|length }} பாக்கள் கிடைத்தன.</header>
+{% autopaginate found_verses 4 %}
+{% paginate %}
+<ol class="found_verses_list">
+{% for verse in found_verses %}
+<li><pre class="verse"><a href="{% url verse_detail verse.id %}">{{ verse.verse_text }}</a>
+<span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}(தெரியவில்லை){% endif %}</span></pre>
+</li>
+{% endfor %}
+</ol>
+{% paginate %}
+{% else %}
+பாக்கள் ஏதும் கிடைக்கவில்லை
+{% endif %}
+</section>
+{% endblock %}

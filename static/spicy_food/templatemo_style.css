@@ -1,0 +1,426 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body.bp {
+	font-family: Verdana, Latha, Arial, sans-serif;
+	color: black;
+	background: #b9b9b9 url(images/templatemo_body.jpg) repeat-x top;
+	margin: auto;
+	width: 1000px;
+}
+
+header, article, footer, section, ul, menu, dir {
+	display: block;
+/*	line-height: 1.7em; */
+}
+body.bp a, body.bp a:visited {
+	color: #fff;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+body.bp a:active, body.bp a:hover {
+	color: #feb24c;
+	text-decoration: none;
+}
+
+p { margin: 0px; padding: 10px 10px; }
+
+img { margin: 0px; padding: 0px; border: none; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px; }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r40 { margin-right: 40px; }
+
+.button_01 {
+	border: 0px;
+	width: 84px;
+	height: 28px;
+	/* font-size: 12px; */
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	background: url(/static/spicy_food/images/templatemo_button_01.gif) no-repeat;
+}
+
+.button_01:hover {
+	background: url(/static/spicy_food/images/templatemo_button_01_hover.gif) no-repeat;
+}
+
+body.bp h2 {
+   font-size: 1.7em;
+   margin-bottom: 0.1em;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 10px 0;
+	/* font-size: 24px; */
+	font-weight: normal;
+	color: #ffffff;
+}
+
+h3 {
+	margin: 0;
+	padding: 2px 0;
+	/* font-size: 18px; */
+	font-weight: normal;
+	color: #000000;
+}
+
+/* HTML5 header */
+#page_header {
+	width: 730px;
+	height: 60px;
+	padding: 10px 120px 10px 150px;
+	overflow: hidden;
+	background: url(images/templatemo_header.jpg) top no-repeat;
+}
+
+/* HTML5 hgroup */
+#page_header > hgroup {
+	float: left;
+	width: 420px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+#page_header h1 {
+   font-size: 2em;
+}
+
+#page_header h1 a, #page_header h1 a:visited {
+   color: #fff;
+	margin: 0px;
+	padding: 5px 5px 10px 5px;
+	/* font-size: 30px; */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#page_header h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+	color: #fff;
+}
+
+input[type=text] {
+   height: 15px;
+   padding: 5px;
+}
+
+#language_select {
+   float: right;
+   width: 150px;
+   text-align: right;
+}
+#search_box {
+	float: right;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+#search_box form {
+	width: 300px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#searchfield {
+	width: 180px;
+	margin-right: 0px;
+	color: #000;
+	/* font-size: 12px; */
+	font-variant: normal;
+	line-height: normal;
+	background-color:#fff;
+}
+
+#searchbutton {
+	cursor: pointer;
+	/* font-size: 12px; */
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	color: #000;
+}
+/* end of header */
+
+/* banner */
+#templatemo_banner {
+	clear: both;
+	width: 990px;
+	height: 200px;
+	padding: 10px 5px 60px 5px;
+	overflow: hidden;
+	background: url(images/templatemo_banner.jpg) no-repeat;
+	background-color:#777;
+}
+
+nav.menu {
+	float: left;
+	width: 140px;
+	padding: 10px 0 0 10px;
+	margin-right: 20px;
+}
+
+nav.menu > ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+nav.menu > ul > li {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav.menu > ul > li > a, nav.menu > ul > li > a:visited {
+	display: block;
+	height: 23px;
+	padding: 2px 0 0 20px;
+	margin-bottom: 5px;
+	/* font-size: 14px; */
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: normal;
+	outline: none;
+}
+
+nav.menu > ul > li > a:hover, nav.menu > ul > li.current {
+	background: url(images/templatemo_menu_hover.png) no-repeat left center;
+	color:#000000;
+}
+
+/* slider */
+
+#slider {
+	float: left;
+	width: 660px;
+	height: 210px;
+	color: black;
+	background-color: #949494;
+/*	padding: 0 50px; */
+}
+
+.text {
+	width: 550px !important;
+	height: 185px !important;
+	margin: 0 50px !important;
+}
+
+/* end of slider */
+
+#templatemo_banner .right_side {
+	color: white;
+	float: right;
+	width: 120px;
+	margin-right: 10px;
+}
+
+#login h2 {
+	/* font-size: 20px; */
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#login form {
+	float: right;
+	width: 120px;
+	margin: 0;
+	padding: 0;
+}
+
+#login form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input_field {
+	height: 20px;
+	width: 105px;
+	padding: 0 5px;
+	margin-bottom: 10px;
+	color: #000000;
+	/* font-size: 12px; */
+	font-variant: normal;
+	line-height: normal;
+}
+
+#submit_btn {
+	float: right;
+	margin-right: 18px;
+	cursor: pointer;
+	/* font-size: 12px; */
+	text-align: center;
+	vertical-align: middle;
+	color: #333;
+	outline: none;
+}
+/* end of banner */
+
+/* content */
+#main_article {
+	clear: both;
+	width: 800px;
+	padding: 10px 100px 30px 100px;
+	background: url(images/templatemo_content_middle.png) repeat-y center;
+	min-height: 150px;
+}
+
+#main_article h2 {
+	/* font-size: 18px;*/
+}
+
+#main_article h2 span {
+	font-weight: bold;
+/*	font-size: 18px;*/
+}
+
+section {
+	padding-top: 10px;
+	/* font-size: 14px; */
+	line-height: 1.25em;
+	text-indent: 50px;
+	text-align: justify;
+}
+
+section header {
+	text-align: center;
+	font-weight: bolder;
+	/* font-size: 18px; */
+}
+
+section.w800 {
+	clear: both;
+	width: 800px;
+}
+
+section.w240 {
+	float: left;
+	width: 240px;
+}
+
+.service {
+	margin: 10px 0 0;
+	padding: 0px;
+	list-style: none;
+}
+
+.service li {
+	padding: 5px 0 5px 30px;
+	background: url(images/templatemo_list_icon.png) left center no-repeat;
+}
+
+.news_box {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;	
+}
+
+.news_box .post_info {
+	color: #000000;
+	font-weight: normal;
+}
+
+.news_box .post_info a {
+	font-weight: normal;
+	color: #147e9d;
+}
+
+.news_box .post_info strong {
+	color: #666666;
+}
+#feed-verse-sidebar {
+   text-align: left;
+   text-indent: 0;
+}
+
+/* end of content */
+
+/* footer */		
+
+footer {
+	clear: both;
+	width: 850px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin: 10px auto;
+	text-align: center;
+	color: #aaa;
+	background-color: #555;
+}
+
+footer > nav {
+	margin: 0 0 10px 0;
+	padding-bottom: 10px;
+	list-style: none;
+}
+
+footer > nav li {
+	margin: 0px;
+	padding: 0 20px;
+	display: inline;
+}
+
+footer > nav .last_menu {
+	border: none;
+}
+/* end of footer */
+
+pre {
+   text-indent: 0;
+   line-height: 2em;
+}
+pre.verse {
+	display: block;
+	border: 1pt solid;
+	text-align: justify;
+	margin: 0px 50px 0px 50px;
+	padding: 10px 20px 25px 5px;
+	/* font-size: 14px; */
+}
+
+#slider pre.verse {
+   font-size: 1em;
+   line-height: 1.3em;
+}
+.author {
+	float: right;
+}
+
+.authors_table {
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	border: 1pt dashed #ccc;
+}
+
+.authors_table th {
+	color: brown;
+	background-color: #aaaa77;
+}
+.authors_list {
+	/* font-size: 16px; */
+	list-style: none;
+	text-indent: 0px;
+}
+
+.found_verses_list li {
+	margin-bottom: 15px;
+}
+

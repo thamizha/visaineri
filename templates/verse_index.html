@@ -1,0 +1,29 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Verses" %}{% endblock %}
+
+{% block themed_head %}
+<script type="text/javascript">
+$(document).ready(function (){
+    $('.menu li:nth-child(2)').addClass('current');
+});
+</script>
+{% endblock %}
+
+{% block slider %}
+<div class="cs_wrapper">
+<div class="cs_slider">
+{% for verse in verses %}
+<section class="cs_article">
+<div class="text">
+<pre class="verse">{{ verse.verse_text }}<br><span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span></pre>
+<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
+</div>
+</section>
+{% endfor %}
+</div>
+</div>
+{% endblock %}
+
+{% block main_article %}
+{% endblock %}

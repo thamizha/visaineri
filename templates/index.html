@@ -1,0 +1,119 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Homepage" %}{% endblock %}
+
+{% block themed_head %}
+{% if user.is_authenticated %}
+{% if user.get_profile %}
+<script src="https://www.google.com/jsapi?key=ABQIAAAAG7HGezLjsxCP1k8lW02fyRR4VKo8gCBIb2nqCbuoPQdDNon7vRQQBaIl-v8H6q8sAay6qLTWO5Dd6g" type="text/javascript"></script>{% endif %}{% endif %}
+<script type="text/javascript">
+$(document).ready(function (){
+    $('#rules').hide();
+    $('.menu li:nth-child(1)').addClass('current');
+});
+{% if user.is_authenticated %}
+{% if user.get_profile %}
+   // Load the Google Onscreen Keyboard API
+try {
+  google.load("elements", "1", {
+    packages: "keyboard"
+  });
+} catch(error) {
+    alert("Fail to connect with google virtual keyboard. Please check your internet connection.");
+}
+function onLoad() {
+  kbd = new google.elements.keyboard.Keyboard(
+  [google.elements.keyboard.LayoutCode.TAMIL_PHONETIC],
+  ['txtInput']);
+}
+function toggleDisplay() {
+  if(kbd.isVisible())
+  {
+    $('#kbd').toggle(1000,'easeOutBounce');
+    kbd.setVisible(false);
+    $('#toggle_keyboard').html("{% trans 'Use Tamil Phonetic Keyboard' %}");
+  }
+  else
+  {
+    kbd.setVisible(true);
+    $('#kbd').toggle(1000,'easeOutBounce');
+    $('#toggle_keyboard').html("{% trans 'Hide Tamil Phonetic Keyboard' %}");
+  }
+}
+google.setOnLoadCallback(onLoad);
+{% endif %}
+{% endif %}
+</script>
+{% endblock %}
+
+{% block slider %}
+<div class="cs_wrapper">
+<div class="cs_slider">
+{% for verse in verses %}
+<section class="cs_article">
+<div class="text">
+<pre class="verse">{{ verse.verse_text }}<br><span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span></pre>
+<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
+</div>
+</section>
+{% endfor %}
+</div>
+</div>
+{% endblock %}
+
+{% block main_article %}
+<section>
+<header>Feed your Verse</header>
+{% if user.is_authenticated %}
+{% if user.get_profile %}
+<form action="" method="POST">
+{% csrf_token %}
+<table>
+<tr>
+<td>
+<textarea id="txtInput" name="new_verse" style="width: 450px; height: 150px"></textarea>
+</td>
+<td>
+<ul id="feed-verse-sidebar">
+<li>
+<a onclick="$('#rules').slideToggle(1000);" >{% trans "Toggle Rules for Punctuation" %}</a>
+</li>
+<li>
+<a id="toggle_keyboard" onload="toggleDisplay();" onclick="toggleDisplay();">{% trans "Hide Tamil Phonetic Keyboard" %}</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="{% trans 'Submit Verse' %}">
+</td>
+</tr>
+</table>
+</form>
+{% else %}
+<p>{% trans "You need to create a Profile in order to upload new verses." %}
+<a href="{% url author_create %}">{% trans "Create Profile" %}</a></p>
+{% endif %}
+{% else %}
+<p>{% trans "In order to upload your Verse you need to be logged in" %}&nbsp;
+<a href="{% url auth_login %}">{% trans "Login" %}</a></p>
+<p>
+{% trans "Don't have an User account? Please Register here: " %}
+<a href="{% url registration_register %}">{% trans "Register" %}</a></p>
+{% endif %}
+</section>
+<section id="rules">
+<header>{% trans "Rules for Punctuation" %}</header>
+<ul>
+<li>{% trans "There should not be any punctuation characters like full stop, comma, semicolon or exclamation mark." %}</li>
+<li>{% trans "Author Name/Signature should not be entered along with the verse." %}</li>
+<li>Eg:
+<pre class="verse">
+அகர முதல எழுத்தெல்லாம் ஆதி
+பகவன் முதற்றே உலகு
+</pre>
+</li>
+</ul>
+</section>
+{% endblock %}

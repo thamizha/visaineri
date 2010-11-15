@@ -1,0 +1,92 @@
+# Tamil Translation
+# Copyright (C) 2010 J Kishore kumar
+# This file is distributed under the same license as the django-registration package.
+# J Kishore kumar <kishorekumar1990@gmail.com>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-registration 0.8 alpha1 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-29 17:14+0530\n"
+"PO-Revision-Date: 2010-10-22 20:20+0530\n"
+"Last-Translator: J Kishore kumar <kishorekumar1990@gmail.com>\n"
+"Language-Team: Tamil <ta@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin.py:23
+msgid "Activate users"
+msgstr "பயனர்களை இயங்க செய்"
+
+#: admin.py:43
+msgid "Re-send activation emails"
+msgstr "இயக்குவதற்கான மின்னஞ்சலை மறுபடியும் அனுப்பு"
+
+#: forms.py:35
+#, fuzzy
+msgid "Username"
+msgstr "பயனர் பெயர்"
+
+#: forms.py:36
+msgid "This value must contain only letters, numbers and underscores."
+msgstr "இந்த புலத்தில் எழுத்து, எண்கள் மற்றும் '_' மட்டுமே அனுமதிக்கப்படும். "
+
+#: forms.py:39
+msgid "Email address"
+msgstr "மின்னஞ்சல் முகவரி"
+
+#: forms.py:41
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: forms.py:43
+msgid "Password (again)"
+msgstr "கடவுச்சொல் (மறுபடியும்)"
+
+#: forms.py:55
+msgid "A user with that username already exists."
+msgstr "இந்த பயனர் பெயர் ஏற்கனவே உபயோகத்தில் உள்ளது."
+
+#: forms.py:67
+msgid "The two password fields didn't match."
+msgstr "இரு கடவுச்சொற்களும் பொருந்தவில்லை."
+
+#: forms.py:78
+msgid "I have read and agree to the Terms of Service"
+msgstr "நான் சேவை விதிமுறைகளை படித்து அவற்றை ஒப்புக்கொள்கிறேன்"
+
+#: forms.py:79
+msgid "You must agree to the terms to register"
+msgstr "பதிவு செய்ய விதிமுறைகளை ஒப்புக்கொள்ள வேண்டும்"
+
+#: forms.py:95
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr "இந்த மின்னஞ்சல் முகவரி பயன்பாட்டில் உள்ளது. வேறு முகவரி அளிக்கவும்."
+
+#: forms.py:122
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+"இலவச மின்னஞ்சல் முகவரிகளை பயன்படுத்தி பதிவு செய்ய தடை விதக்கப்பட்டுள்ளது. வேறு முகவரி "
+"அளிக்கவும்."
+
+#: models.py:168
+msgid "user"
+msgstr "பயனர்"
+
+#: models.py:169
+msgid "activation key"
+msgstr "இயக்குவதற்கான சாவி"
+
+#: models.py:174
+msgid "registration profile"
+msgstr "பதிவு பக்கதோற்ற வடிவம்"
+
+#: models.py:175
+msgid "registration profiles"
+msgstr "பதிவு பக்கதோற்ற வடிவங்கள்"

@@ -1,0 +1,72 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% load pagination_tags %}
+
+{% block title %}{% trans "Verse Authors" %}{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+
+{% block themed_head %}
+<script type="text/javascript">
+$(document).ready(function (){
+    $('.menu li:nth-child(3)').addClass('current');
+    {% if q %}
+    $('#author_searchfield').attr('value', '{{ q }}');
+    {% endif %}
+   });
+</script>
+{% endblock %}
+
+{% block slider %}
+<section>
+<header>{% trans "Verse Authors" %}</header>
+<p>{% blocktrans %}This page contains the list of all Authors who have written Verses{% endblocktrans %}</p>
+<div id="author_search_box">
+<form action="" method="get">
+<input type="text" value="{% trans 'Author Search' %}" name="q" size="20" id="author_searchfield" title="{% trans 'Enter a few characters of the Author name' %}" onfocus="clearText(this)" onblur="clearText(this)" />
+<input class="button_01" type="submit" value="{% trans 'Search' %}" id="author_searchbutton" title="{% trans 'Start Author Search' %}" />
+</form>
+</div>
+{% if q %}
+{% blocktrans %}You searched for: {{q}}{% endblocktrans %}
+{% endif %}
+</section>
+{% endblock %}
+
+{% block main_article %}
+<section id="authors">
+{% if q %}
+{% autopaginate found_authors 15 %}
+{% paginate %}
+<ol class="found_authors_list">
+{% for author in found_authors %}
+<li><pre><a href="{% url author_detail author.id %}">{{ author.name }}</a></pre>
+</li>
+{% endfor %}
+</ol>
+{% paginate %}
+{% else %}
+{% autopaginate authors 15 %}
+<table class="authors_table">
+<tr>
+<th>{% trans "Author Name" %}</th>
+<th>{% trans "Joined Date" %}</th>
+<th>{% trans "Verses written" %}</th>
+</tr>
+{% for author in  authors %}
+<tr>
+   <td style="text-align:left"><a href="{% url author_detail author.id %}">{{ author }}</a></td>
+   <td>{% if author.user %}{{ author.user.date_joined }}{% else %}-{% endif %}</td>
+   <td>{{ author.verses.count }}</td>
+</tr>
+{% endfor %}
+</table>
+{% paginate %}
+{% endif %}
+<!--ul class="authors_list">
+{% for author in  authors %}
+<li><a href="{% url author_detail author.id %}">{{author}}</a></li>
+{% endfor %}
+</ul-->
+</section>
+{% endblock %}

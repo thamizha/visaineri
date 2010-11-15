@@ -1,0 +1,97 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+{% block title %}{{ verse }}{% endblock %}
+
+{% block themed_head %}
+<script src="https://www.google.com/jsapi?key=ABQIAAAAG7HGezLjsxCP1k8lW02fyRR4VKo8gCBIb2nqCbuoPQdDNon7vRQQBaIl-v8H6q8sAay6qLTWO5Dd6g" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+   $('#rules').hide();
+});
+   // Load the Google Onscreen Keyboard API
+try {
+  google.load("elements", "1", {
+    packages: "keyboard"
+  });
+} catch(error) {
+    alert("Fail to connect with google virtual keyboard. Please check your internet connection.");
+}
+function onLoad() {
+  kbd = new google.elements.keyboard.Keyboard(
+  [google.elements.keyboard.LayoutCode.TAMIL_PHONETIC],
+  ['txtInput']);
+}
+function toggleDisplay() {
+  if(kbd.isVisible())
+  {
+    $('#kbd').toggle(1000,'easeOutBounce');
+    kbd.setVisible(false);
+    $('#toggle_keyboard').html("{% trans 'Use Tamil Phonetic Keyboard' %}");
+  }
+  else
+  {
+    kbd.setVisible(true);
+    $('#kbd').toggle(1000,'easeOutBounce');
+    $('#toggle_keyboard').html("{% trans 'Hide Tamil Phonetic Keyboard' %}");
+  }
+}
+google.setOnLoadCallback(onLoad);
+</script>
+{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+
+{% block slider %}
+<section>
+<header>{% trans "Verse" %}</header>
+<pre class="verse">{{ verse.verse_text }}<br><span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span></pre>
+</section>
+{% endblock %}
+
+{% block main_article %}
+<section id="description">
+   <header>{% trans "Details" %}</header>
+   <p><b>{% trans "Verse Publishing Date" %} : </b>{{ verse.publishing_date }}</p>
+   <p><b>{% trans "Verse Revision Date" %} : </b>{{ verse.revision_date }}</p>
+</section>
+<section id="editing_verse">
+<form action="" method="POST">
+{% csrf_token %}
+<table>
+<tr>
+<td>
+<textarea id="txtInput" name="edit_verse" rows="10" cols="70">{{ verse.verse_text }}</textarea>
+</td>
+<td style="text-align:left; text-indent:0px;">
+<ul style="font-size:small;">
+<li>
+<a style="vertical-align:top;" onclick="$('#rules').slideToggle(1000);" >{% trans "Toggle Rules for Punctuation" %}</a>
+</li>
+<li>
+<a id="toggle_keyboard" onload="toggleDisplay();" onclick="toggleDisplay();">{% trans "Hide Tamil Phonetic Keyboard" %}</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input style="margin-left:150px;" type="submit" value="{% trans 'Submit Verse' %}">
+</td>
+</tr>
+</table>
+</form>
+</section>
+<section id="rules">
+<header>{% trans "Rules for Punctuation" %}</header>
+<ul>
+<li>{% trans "There should not be any punctuation characters like full stop, comma, semicolon or exclamation mark." %}</li>
+<li>{% trans "Author Name/Signature should not be entered along with the verse." %}</li>
+<li>Eg:
+<pre class="verse">
+அகர முதல எழுத்தெல்லாம் ஆதி
+பகவன் முதற்றே உலகு
+</pre>
+</li>
+</ul>
+</section>
+{% endblock %}

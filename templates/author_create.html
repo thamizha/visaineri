@@ -1,0 +1,27 @@
+{% extends "themed_base.html" %}
+{% load i18n %}
+
+{% block title %}{{ user.username }}{% endblock %}
+
+{% block disable_content_slider %}{% endblock %}
+
+{% block slider %}
+
+{% endblock %}
+
+{% block main_article %}
+<section>
+<header>{% trans "New Author Form" %}</header>
+<form action="" method="POST">
+{% csrf_token %}
+<table>
+{{ form }}
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="{% trans 'Save Changes' %}" />
+</td>
+</tr>
+</table>
+</form>
+</section>
+{% endblock %}
