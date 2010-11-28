@@ -73,6 +73,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'myMiddlewares.ForceDefaultLanguageMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -83,8 +84,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 LANGUAGES = (
-  ('en', 'English'),
   ('ta', 'தமிழ்'),
+  ('en', 'English'),
 )
 
 ROOT_URLCONF = 'visaineri.urls'
