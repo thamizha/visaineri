@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load pagination_tags %}
+{% load sanitize_tag %}
 
 {% block title %}{{ author.name }}{% endblock %}
 
@@ -9,7 +10,7 @@
 <h2>{{ author }} {% if request.user.is_authenticated %}{% ifequal author.id request.user.get_profile.id %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endifequal %}{% else %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endif %}</h2>
 {% if author.biography %}
 {% autoescape off %}
-{{ author.biography }}
+{{ author.biography|sanitize }}
 {% endautoescape %}
 {% else %}
 {% trans "No information about the author is available." %}
