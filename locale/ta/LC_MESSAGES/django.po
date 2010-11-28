@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visaineri 0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 10:56+0530\n"
+"POT-Creation-Date: 2010-11-28 16:34+0530\n"
 "PO-Revision-Date: 2010-11-07 10:58+0530\n"
 "Last-Translator: J Kishore Kumar <jkk@visaineri.net>\n"
 "Language-Team: Tamil <ta@li.org>\n"
@@ -26,7 +26,8 @@ msgstr "பயனர்களை இயங்க செய்"
 msgid "Re-send activation emails"
 msgstr "இயக்குவதற்கான மின்னஞ்சலை மறுபடியும் அனுப்பு"
 
-#: registration/forms.py:38 templates/themed_base.html:97
+#: registration/forms.py:38 templates/base.html:86
+#: templates/themed_base.html:105
 msgid "Username"
 msgstr "பயனர் பெயர்"
 
@@ -38,7 +39,8 @@ msgstr "இந்த புலத்தில் எழுத்து, எண�
 msgid "Email address"
 msgstr "மின்னஞ்சல் முகவரி"
 
-#: registration/forms.py:44 templates/themed_base.html:99
+#: registration/forms.py:44 templates/base.html:88
+#: templates/themed_base.html:107
 msgid "Password"
 msgstr "கடவுச்சொல்"
 
@@ -75,6 +77,7 @@ msgid ""
 msgstr ""
 "இலவச மின்னஞ்சல் முகவரிகளை பயன்படுத்தி பதிவு செய்ய தடை விதக்கப்பட்டுள்ளது. வேறு முகவரி "
 "அளிக்கவும்."
+
 #: registration/models.py:168
 msgid "user"
 msgstr "பயனர்"
@@ -99,12 +102,13 @@ msgstr "இந்த செயலை நிறைவேற்ற உங்கள
 msgid "&laquo; Back to Home"
 msgstr "&laquo; வீடு திரும்பவும்"
 
-#: templates/about_us.html:3 templates/about_us.html.py:17
-#: templates/themed_base.html:69 templates/themed_base.html.py:120
+#: templates/about_us.html:3 templates/about_us.html.py:15
+#: templates/base.html:63 templates/base.html.py:110
+#: templates/themed_base.html:77 templates/themed_base.html.py:128
 msgid "About Us"
 msgstr "எங்களை பற்றி"
 
-#: templates/about_us.html:18
+#: templates/about_us.html:17
 msgid ""
 "\n"
 "\"Visaineri\" is created on the basis of rules governing the tamil grammar. "
@@ -120,7 +124,7 @@ msgstr ""
 "எழுத்து, அசை, சீர், தளை, அடி, தொடை போன்ற உறுப்புக்களை அடையாளம் கண்டு மேலே விளக்கியுள்ள "
 "XML குறியீட்டு முறையில் இப்பகுப்பாய்வி வெளியிடுகிறது.\n"
 
-#: templates/about_us.html:23
+#: templates/about_us.html:22
 msgid ""
 "\n"
 "Visaineri is built on Python's <a href=\"http://pages.cpsc.ucalgary.ca/"
@@ -130,40 +134,40 @@ msgstr ""
 "விசைநெறி, பைத்தான் நிரல்மொழியில் உள்ள <a href=\"http://pages.cpsc.ucalgary.ca/"
 "~aycock/spark/\">SPARK</a> எனும் பகுப்பாய்விக் கட்டமைப்பைப் பற்றி அமைந்துள்ளது.\n"
 
-#: templates/author_create.html:14
+#: templates/author_create.html:8
 msgid "New Author Form"
 msgstr "புதிய ஆசிரியர் உருவாக்குதல்"
 
-#: templates/author_create.html:21 templates/author_edit.html:30
+#: templates/author_create.html:15 templates/author_edit.html:14
 msgid "Save Changes"
 msgstr "மாற்றங்களை சேமி"
 
-#: templates/author_detail.html:12 templates/author_edit.html:11
+#: templates/author_detail.html:9 templates/verse_detail.html:9
+msgid "Edit"
+msgstr "மாற்று"
+
+#: templates/author_detail.html:15
+msgid "No information about the author is available."
+msgstr "ஆசிரியர் பற்றிய குறிப்புகள் ஏதும் இல்லை."
+
+#: templates/author_detail.html:19
 #, python-format
 msgid "Verses written by %(author)s:"
 msgstr "%(author)s எழுதிய பாக்கள்:"
 
-#: templates/author_detail.html:14 templates/author_edit.html:13
-#: templates/index.html:56 templates/verse_detail.html:21
-#: templates/verse_index.html:20
+#: templates/author_detail.html:28 templates/search.html:36
+#: templates/verse_detail.html:21 templates/verse_index.html:25
 msgid "Analysis Results"
 msgstr "பகுப்பாய்வு முடிவுகள்"
 
-#: templates/author_detail.html:24 templates/verse_detail.html:9
-msgid "Edit"
-msgstr "மாற்று"
-
-#: templates/author_detail.html:30
-msgid "No information about the author is available."
-msgstr "ஆசிரியர் பற்றிய குறிப்புகள் ஏதும் இல்லை."
-
-#: templates/author_edit.html:23
+#: templates/author_edit.html:7
 #, python-format
 msgid "%(author)s Editing Form"
 msgstr "%(author)s மாற்றும் பக்கம்"
 
 #: templates/author_index.html:5 templates/author_index.html.py:22
-#: templates/themed_base.html:68 templates/themed_base.html.py:119
+#: templates/base.html:62 templates/base.html.py:109
+#: templates/themed_base.html:76 templates/themed_base.html.py:127
 msgid "Verse Authors"
 msgstr "பா ஆசிரியர்கள்"
 
@@ -179,7 +183,8 @@ msgstr "ஆசிரியர் தேடல்"
 msgid "Enter a few characters of the Author name"
 msgstr "வேண்டிய ஆசிரியரின் சில எழுத்துகளை குறிப்பிடுக"
 
-#: templates/author_index.html:27 templates/themed_base.html:59
+#: templates/author_index.html:27 templates/base.html:52
+#: templates/themed_base.html:67
 msgid "Search"
 msgstr "தேடுக"
 
@@ -192,28 +197,141 @@ msgstr "ஆசிரியர் தேடலைத் தொடங்கு"
 msgid "You searched for: %(q)s"
 msgstr "நீங்கள் தேடியது: %(q)s"
 
-#: templates/author_index.html:52
+#: templates/author_index.html:51
 msgid "Author Name"
 msgstr "ஆசிரியர் பெயர்"
 
-#: templates/author_index.html:53
+#: templates/author_index.html:52
 msgid "Joined Date"
 msgstr "சேர்ந்த தேதி"
 
-#: templates/author_index.html:54
+#: templates/author_index.html:53
 msgid "Verses written"
 msgstr "எழுதிய பாக்கள்"
 
-#: templates/base.html:6 templates/themed_base.html:42
-msgid "Visaineri Analyzer"
+#: templates/base.html:6 templates/base.html.py:45
+msgid "Visaineri Analyser"
 msgstr "விசைநெறி பகுப்பாய்வி"
 
-#: templates/contact_us.html:3 templates/contact_us.html.py:17
-#: templates/themed_base.html:70 templates/themed_base.html.py:121
+#: templates/base.html:41
+msgid "Submit"
+msgstr "சமர்ப்பி"
+
+#: templates/base.html:46
+msgid "A tool to parse tamil poems"
+msgstr "யாப்பிலக்கணம் அறிய ஒரு கருவி"
+
+#: templates/base.html:51 templates/themed_base.html:66
+msgid "Search Verse"
+msgstr "பா தேடல்"
+
+#: templates/base.html:51 templates/themed_base.html:66
+msgid "Enter a few words of the verse"
+msgstr "வேண்டிய பாவின் சில சொற்களை குறிப்பிடுக"
+
+#: templates/base.html:52 templates/themed_base.html:67
+msgid "Start searching for Verses"
+msgstr "பா தேடலைத் தொடங்கு"
+
+#: templates/base.html:58
+msgid "Navigation"
+msgstr ""
+
+#: templates/base.html:60 templates/base.html.py:107 templates/index.html:4
+#: templates/themed_base.html:74 templates/themed_base.html.py:125
+msgid "Homepage"
+msgstr "முதற்பக்கம்"
+
+#: templates/base.html:61 templates/base.html.py:108
+#: templates/themed_base.html:75 templates/themed_base.html.py:126
+#: templates/verse_index.html:4
+msgid "Verses"
+msgstr "பா களஞ்சியம்"
+
+#: templates/base.html:64 templates/base.html.py:111
+#: templates/contact_us.html:3 templates/contact_us.html.py:15
+#: templates/themed_base.html:78 templates/themed_base.html.py:129
 msgid "Contact Us"
 msgstr "தொடர்பு கொள்"
 
-#: templates/contact_us.html:18
+#: templates/base.html:69 templates/themed_base.html:88
+msgid "Hi, "
+msgstr "வணக்கம், "
+
+#: templates/base.html:72 templates/themed_base.html:91
+msgid "View Profile"
+msgstr "Profile'ஐ பார்க"
+
+#: templates/base.html:73 templates/themed_base.html:92
+msgid "Edit Profile"
+msgstr "Profile'ஐ மாற்று"
+
+#: templates/base.html:75 templates/index.html:90
+#: templates/themed_base.html:94
+msgid "Create Profile"
+msgstr "Profile'ஐ உருவாக்கு"
+
+#: templates/base.html:77 templates/themed_base.html:96
+msgid "Change Password"
+msgstr "கடவுச்சொல்லை மாற்று"
+
+#: templates/base.html:78 templates/themed_base.html:97
+msgid "Logout"
+msgstr "வெளியேறு"
+
+#: templates/base.html:83 templates/themed_base.html:102
+msgid "Member"
+msgstr "உறுப்பினர்"
+
+#: templates/base.html:87 templates/themed_base.html:106
+msgid "Username for Login"
+msgstr "உள்நுழைவதற்கான பயனர் பெயர்"
+
+#: templates/base.html:89 templates/themed_base.html:108
+msgid "Password for Login"
+msgstr "உள்நுழைவதற்கான கடவுச்சொல்"
+
+#: templates/base.html:90 templates/index.html:94
+#: templates/themed_base.html:109
+msgid "Login"
+msgstr "உள்நுழை"
+
+#: templates/base.html:93 templates/themed_base.html:112
+msgid "New User?"
+msgstr "புதிய பயனரா?"
+
+#: templates/base.html:94
+msgid "Forgot Password?"
+msgstr "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
+
+#: templates/base.html:115 templates/themed_base.html:132
+msgid ""
+"Visaineri.net is licensed under a <a rel=\"license\" href=\"http://"
+"creativecommons.org/licenses/by/2.5/in/\">Creative Commons Attribution 2.5 "
+"India License</a>."
+msgstr ""
+"Visaineri.net <a rel=\"license\" href=\"http://creativecommons.org/licenses/"
+"by/2.5/in/\">Creative Commons Attribution 2.5 India License</a> எனும் "
+"உரிமத்தின் கீழ் வழங்கப்படுகிறது."
+
+#: templates/base.html:116
+msgid ""
+"Modified from <a href=\"http://www.freehtml5templates.com/papery-html5-and-"
+"css3-template-using-font-face\">Papery Template"
+msgstr ""
+"மாற்றியமைக்கப்பட்ட <a href=\"http://www.freehtml5templates.com/papery-html5-and-"
+"css3-template-using-font-face\">Papery Template"
+
+#: templates/base.html:116
+msgid ""
+"Validate <a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
+"&amp; <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a></"
+"p>"
+msgstr ""
+"<a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> மற்றும் <a "
+"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>சரிபார்க்கவும்"
+
+#: templates/contact_us.html:17
 msgid ""
 "\n"
 "For queries and comments regarding Visaineri, please use our Email address.\n"
@@ -222,164 +340,129 @@ msgstr ""
 "விசைநெறி பற்றிய உங்கள் கேள்விகள் மற்றும் கருத்துகளை தெரிவிக்க எங்கள் மின்னஞ்சல் முகவரியை "
 "பயன்படுத்தவும்.\n"
 
-#: templates/contact_us.html:23
+#: templates/contact_us.html:21
 msgid "Email Address"
 msgstr "மின்னஞ்சல் முகவரி"
 
-#: templates/contact_us.html:24
+#: templates/contact_us.html:22
 msgid "Twitter"
 msgstr "ட்விட்டர்"
 
-#: templates/contact_us.html:25
+#: templates/contact_us.html:23
 msgid "Facebook"
 msgstr "ஃபேஸ் புக்"
 
-#: templates/index.html:3 templates/themed_base.html:66
-#: templates/themed_base.html.py:117
-msgid "Homepage"
-msgstr "முதற்பக்கம்"
-
-#: templates/index.html:34 templates/verse_edit.html:29
+#: templates/index.html:38 templates/index.html.py:82
+#: templates/verse_edit.html:29
 msgid "Use Tamil Phonetic Keyboard"
 msgstr "தமிழ் ஒலிப்பியல் முறை விசைப்பலகையை பயன்படுத்து"
 
-#: templates/index.html:40 templates/index.html.py:82
+#: templates/index.html:44 templates/index.html.py:52
 #: templates/verse_edit.html:35 templates/verse_edit.html.py:71
 msgid "Hide Tamil Phonetic Keyboard"
 msgstr "தமிழ் ஒலிப்பியல் முறை விசைப்பலகையை மறை"
-
-#: templates/index.html:55 templates/verse_detail.html:10
-#: templates/verse_edit.html:47 templates/verse_index.html:19
-msgid "Anonymous"
-msgstr "தெரியவில்லை"
 
 #: templates/index.html:79 templates/verse_edit.html:68
 msgid "Toggle Rules for Punctuation"
 msgstr "குறி விதிகள் காட்டுவதை மாற்று(toggle)"
 
-#: templates/index.html:89 templates/verse_edit.html:78
+#: templates/index.html:86 templates/verse_edit.html:78
 msgid "Submit Verse"
 msgstr "பாவை சமர்ப்பி"
 
-#: templates/index.html:95
+#: templates/index.html:89
 msgid "You need to create a Profile in order to upload new verses."
 msgstr "புதிய பாக்களை ஏற்றும் முன் உங்களுக்கு ஒரு Profile'ஐ உருவாக்க வேண்டும்."
 
-#: templates/index.html:96 templates/themed_base.html:86
-msgid "Create Profile"
-msgstr "Profile'ஐ உருவாக்கு"
-
-#: templates/index.html:99
+#: templates/index.html:93
 msgid "In order to upload your Verse you need to be logged in"
 msgstr "பாக்களை ஏற்றும் முன் நீங்கள் உள்நுழைய வேண்டும்"
 
-#: templates/index.html:100 templates/themed_base.html:101
-msgid "Login"
-msgstr "உள்நுழை"
-
-#: templates/index.html:102
+#: templates/index.html:96
 msgid "Don't have an User account? Please Register here: "
 msgstr "இவ்வளைத்தளத்தில் இன்னும் சேரவில்லையா? இங்கே பதிவு செய்யவும்: "
 
-#: templates/index.html:103
+#: templates/index.html:97
 msgid "Register"
 msgstr "பதிவு செய்க"
 
-#: templates/index.html:107 templates/verse_edit.html:85
+#: templates/index.html:101 templates/verse_edit.html:85
 msgid "Rules for Punctuation"
 msgstr "குறி விதிகள்"
 
-#: templates/index.html:109 templates/verse_edit.html:87
+#: templates/index.html:103 templates/verse_edit.html:87
 msgid ""
 "There should not be any punctuation characters like full stop, comma, "
 "semicolon or exclamation mark."
-msgstr "முற்றுப்புள்ளி, காற்புள்ளி, அரைப்புள்ளி, ஆச்சரியகுறி போன்ற குறிகள் பாவில் அனுமதிக்கப்படாது."
+msgstr ""
+"முற்றுப்புள்ளி, காற்புள்ளி, அரைப்புள்ளி, ஆச்சரியகுறி போன்ற குறிகள் பாவில் "
+"அனுமதிக்கப்படாது."
 
-#: templates/index.html:110 templates/verse_edit.html:88
+#: templates/index.html:104 templates/verse_edit.html:88
 msgid "Author Name/Signature should not be entered along with the verse."
 msgstr "ஆசிரியர் பெயர்/கையொப்பம் பா இடும்பொழுது சேர்க்கக்கூடாது."
 
-#: templates/themed_base.html:58
-msgid "Search Verse"
-msgstr "பா தேடல்"
+#: templates/search.html:5
+msgid "Search:"
+msgstr "தேடுக:"
 
-#: templates/themed_base.html:58
-msgid "Enter a few words of the verse"
-msgstr "வேண்டிய பாவின் சில சொற்களை குறிப்பிடுக"
+#: templates/search.html:18
+msgid "You searched for:"
+msgstr "நீங்கள் தேடியது:"
 
-#: templates/themed_base.html:59
-msgid "Start searching for Verses"
-msgstr "பா தேடலைத் தொடங்கு"
+#: templates/search.html:21
+msgid "Search results:"
+msgstr "தேடல் முடிவுகள்:"
 
-#: templates/themed_base.html:67 templates/themed_base.html.py:118
-#: templates/verse_index.html:3
-msgid "Verses"
-msgstr "பா களஞ்சியம்"
-
-#: templates/themed_base.html:80
-msgid "Hi, "
-msgstr "வணக்கம், "
-
-#: templates/themed_base.html:83
-msgid "View Profile"
-msgstr "Profile'ஐ பார்க"
-
-#: templates/themed_base.html:84
-msgid "Edit Profile"
-msgstr "Profile'ஐ மாற்று"
-
-#: templates/themed_base.html:88
-msgid "Change Password"
-msgstr "கடவுச்சொல்லை மாற்று"
-
-#: templates/themed_base.html:89
-msgid "Logout"
-msgstr "வெளியேறு"
-
-#: templates/themed_base.html:94
-msgid "Member"
-msgstr "உறுப்பினர்"
-
-#: templates/themed_base.html:98
-msgid "Username for Login"
-msgstr "உள்நுழைவதற்கான பயனர் பெயர்"
-
-#: templates/themed_base.html:100
-msgid "Password for Login"
-msgstr "உள்நுழைவதற்கான கடவுச்சொல்"
-
-#: templates/themed_base.html:104
-msgid "New User?"
-msgstr "புதிய பயனரா?"
-
-#: templates/themed_base.html:124
+#: templates/search.html:22
+#, python-format
 msgid ""
-"Visaineri.net is licensed under a <a rel=\"license\" href=\"http://"
-"creativecommons.org/licenses/by/2.5/in/\">Creative Commons Attribution 2.5 "
-"India License</a>."
-msgstr ""
-"Visaineri.net <a rel=\"license\" href=\"http://"
-"creativecommons.org/licenses/by/2.5/in/\">Creative Commons Attribution 2.5 "
-"India License</a> எனும் உரிமத்தின் கீழ் வழங்கப்படுகிறது."
+"\n"
+"Found one verse.\n"
+msgid_plural ""
+"\n"
+"Found %(counter)s verses.\n"
+msgstr[0] ""
+"\n"
+"ஒரு பா கிடைத்தது.\n"
+msgstr[1] ""
+"\n"
+"%(counter)s பாக்கள் கிடைத்தன.\n"
 
-#: templates/themed_base.html:125
+#: templates/search.html:32 templates/verse_detail.html:10
+#: templates/verse_edit.html:47 templates/verse_index.html:21
+msgid "Anonymous"
+msgstr "தெரியவில்லை"
+
+#: templates/search.html:32 templates/verse_index.html:21
+msgid "wrote,"
+msgstr "எழுதியது,"
+
+#: templates/search.html:42
+msgid "No verse found"
+msgstr "பா ஏதும் கிடைக்கவில்லை"
+
+#: templates/themed_base.html:50
+msgid "Visaineri Analyzer"
+msgstr "விசைநெறி பகுப்பாய்வி"
+
+#: templates/themed_base.html:133
 msgid ""
 "Design adapted from <a href=\"http://www.worldclasslasik.com\">new york "
 "lasik surgery</a> and <a href=\"http://www.getnetset.com\">cpa website "
 "design</a>"
 msgstr ""
-"வலை வடிவம் <a href=\"http://www.worldclasslasik.com\">new york "
-"lasik surgery</a> மற்றும் <a href=\"http://www.getnetset.com\">cpa website "
-"design</a>னிடமிருந்து மாற்றியமைக்கப்பட்டுள்ளது"
+"வலை வடிவம் <a href=\"http://www.worldclasslasik.com\">new york lasik surgery</"
+"a> மற்றும் <a href=\"http://www.getnetset.com\">cpa website design</"
+"a>னிடமிருந்து மாற்றியமைக்கப்பட்டுள்ளது"
 
-#: templates/themed_base.html:125
+#: templates/themed_base.html:133
 msgid ""
 "Validate <a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
 "&amp; <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
-"<a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
-"மற்றும் <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
-"சரிபார்க்கவும்"
+"<a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> மற்றும் <a "
+"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>சரிபார்க்கவும்"
 
 #: templates/verse_detail.html:9 templates/verse_edit.html:46
 msgid "Verse"
@@ -495,7 +578,8 @@ msgstr "கடவுச்சொல் மாற்றம் முடிவட�
 
 #: templates/registration/password_reset_complete.html:10
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "உங்கள் கடவுச்சொல் மாற்றியமைக்கப்பட்டுள்ளது. புதிய கடவுச்சொல் கொண்டு இப்பொழுது உள்நுழையலாம்."
+msgstr ""
+"உங்கள் கடவுச்சொல் மாற்றியமைக்கப்பட்டுள்ளது. புதிய கடவுச்சொல் கொண்டு இப்பொழுது உள்நுழையலாம்."
 
 #: templates/registration/password_reset_complete.html:12
 msgid "Log in"
@@ -515,8 +599,7 @@ msgstr "புதிய கடவுச்சொல் அளிக்கவு�
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
-msgstr ""
-"புதிய கடவுச்சொல்லை இருமுறை அளிக்கவும். அவை ஒன்றுபோல் உள்ளதா என சரிபார்க்கப்படும்."
+msgstr "புதிய கடவுச்சொல்லை இருமுறை அளிக்கவும். அவை ஒன்றுபோல் உள்ளதா என சரிபார்க்கப்படும்."
 
 #: templates/registration/password_reset_confirm.html:24
 msgid "Password reset unsuccessful"
@@ -527,8 +610,8 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"கடவுச்சொல் நிலைமீட்டல் தொடர்பு சுட்டி(link) தவறானது. ஒருவேளை இது ஏற்கனவே பயன்படுத்தப்பட்டு"
-"இருக்கலாம். இன்னொரு முறை கடவுச்சொல் நிலைமீட்டலை முயற்சிக்கவும்."
+"கடவுச்சொல் நிலைமீட்டல் தொடர்பு சுட்டி(link) தவறானது. ஒருவேளை இது ஏற்கனவே "
+"பயன்படுத்தப்பட்டுஇருக்கலாம். இன்னொரு முறை கடவுச்சொல் நிலைமீட்டலை முயற்சிக்கவும்."
 
 #: templates/registration/password_reset_done.html:4
 #: templates/registration/password_reset_done.html:8

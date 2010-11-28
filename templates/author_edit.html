@@ -1,26 +1,10 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% block title %}{{ author.name }}{% endblock %}
 
-{% block slider %}
-<div class="cs_wrapper">
-<div class="cs_slider">
-{% for verse in author.verses.all %}
-<section class="cs_article">
-<div class="text">
-<header>{% blocktrans %}Verses written by {{ author }}:{% endblocktrans %}</header>
-<pre class="verse">{{ verse.verse_text }}</pre>
-<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
-</div>
-</section>
-{% endfor %}
-</div>
-</div>
-{% endblock %}
-
-{% block main_article %}
+{% block content %}
 <section>
-<header>{% blocktrans %}{{ author }} Editing Form{% endblocktrans %}</header>
+<h2>{% blocktrans %}{{ author }} Editing Form{% endblocktrans %}</h2>
 <form action="" method="POST">
 {% csrf_token %}
 <table>

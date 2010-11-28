@@ -1,16 +1,12 @@
 {% extends "themed_base.html" %}
-
+{% load i18n %}
 {% load pagination_tags %}
 
-{% block title %}தேடல்: {{ q }}{% endblock %}
+{% block title %}{% trans "Search:" %}{{ q }}{% endblock %}
 
-{% block disable_content_slider %}{% endblock %}
-{% block slider %}
-நீங்கள் தேடியது:
- {{q}}
-{% endblock %}
 
-{% block themed_head %}
+
+{% block head %}
 <script type="text/javascript">
    $(document).ready(function (){
       $('#searchfield').attr('value', '{{ q }}');
@@ -18,22 +14,32 @@
 </script>
 {% endblock %}
 
-{% block main_article %}
+{% block content %}
+{% trans "You searched for:" %} {{q}}
 <section id="found_verses">
 {% if found_verses %}
-<header>தேடல் முடிவுகள் : {{ found_verses|length }} பாக்கள் கிடைத்தன.</header>
+<h2>{% trans "Search results:" %}
+{% blocktrans count found_verses|length as counter %}
+Found one verse.
+{% plural %}
+Found {{ counter }} verses.
+{% endblocktrans %}</h2>
 {% autopaginate found_verses 4 %}
 {% paginate %}
-<ol class="found_verses_list">
+<hr>
 {% for verse in found_verses %}
-<li><pre class="verse"><a href="{% url verse_detail verse.id %}">{{ verse.verse_text }}</a>
-<span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}(தெரியவில்லை){% endif %}</span></pre>
-</li>
+<article>
+<h3><span class="author">{% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span>&nbsp;{% trans "wrote," %}</h3>
+<pre class="verse">
+{{ verse.verse_text }}
+</pre>
+<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
+</article>
+<hr>
 {% endfor %}
-</ol>
 {% paginate %}
 {% else %}
-பாக்கள் ஏதும் கிடைக்கவில்லை
+{% trans "No verse found" %}
 {% endif %}
 </section>
 {% endblock %}

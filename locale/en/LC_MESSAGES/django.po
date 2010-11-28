@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 10:56+0530\n"
+"POT-Creation-Date: 2010-11-28 16:34+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,8 @@ msgstr ""
 msgid "Re-send activation emails"
 msgstr ""
 
-#: registration/forms.py:38 templates/themed_base.html:97
+#: registration/forms.py:38 templates/base.html:86
+#: templates/themed_base.html:105
 msgid "Username"
 msgstr ""
 
@@ -36,7 +37,8 @@ msgstr ""
 msgid "Email address"
 msgstr ""
 
-#: registration/forms.py:44 templates/themed_base.html:99
+#: registration/forms.py:44 templates/base.html:88
+#: templates/themed_base.html:107
 msgid "Password"
 msgstr ""
 
@@ -96,12 +98,13 @@ msgstr ""
 msgid "&laquo; Back to Home"
 msgstr ""
 
-#: templates/about_us.html:3 templates/about_us.html.py:17
-#: templates/themed_base.html:69 templates/themed_base.html.py:120
+#: templates/about_us.html:3 templates/about_us.html.py:15
+#: templates/base.html:63 templates/base.html.py:110
+#: templates/themed_base.html:77 templates/themed_base.html.py:128
 msgid "About Us"
 msgstr ""
 
-#: templates/about_us.html:18
+#: templates/about_us.html:17
 msgid ""
 "\n"
 "\"Visaineri\" is created on the basis of rules governing the tamil grammar. "
@@ -111,47 +114,47 @@ msgid ""
 "format.\n"
 msgstr ""
 
-#: templates/about_us.html:23
+#: templates/about_us.html:22
 msgid ""
 "\n"
 "Visaineri is built on Python's <a href=\"http://pages.cpsc.ucalgary.ca/"
 "~aycock/spark/\">SPARK Parser framework</a>\n"
 msgstr ""
 
-#: templates/author_create.html:14
+#: templates/author_create.html:8
 msgid "New Author Form"
 msgstr ""
 
-#: templates/author_create.html:21 templates/author_edit.html:30
+#: templates/author_create.html:15 templates/author_edit.html:14
 msgid "Save Changes"
 msgstr ""
 
-#: templates/author_detail.html:12 templates/author_edit.html:11
+#: templates/author_detail.html:9 templates/verse_detail.html:9
+msgid "Edit"
+msgstr ""
+
+#: templates/author_detail.html:15
+msgid "No information about the author is available."
+msgstr ""
+
+#: templates/author_detail.html:19
 #, python-format
 msgid "Verses written by %(author)s:"
 msgstr ""
 
-#: templates/author_detail.html:14 templates/author_edit.html:13
-#: templates/index.html:56 templates/verse_detail.html:21
-#: templates/verse_index.html:20
+#: templates/author_detail.html:28 templates/search.html:36
+#: templates/verse_detail.html:21 templates/verse_index.html:25
 msgid "Analysis Results"
 msgstr ""
 
-#: templates/author_detail.html:24 templates/verse_detail.html:9
-msgid "Edit"
-msgstr ""
-
-#: templates/author_detail.html:30
-msgid "No information about the author is available."
-msgstr ""
-
-#: templates/author_edit.html:23
+#: templates/author_edit.html:7
 #, python-format
 msgid "%(author)s Editing Form"
 msgstr ""
 
 #: templates/author_index.html:5 templates/author_index.html.py:22
-#: templates/themed_base.html:68 templates/themed_base.html.py:119
+#: templates/base.html:62 templates/base.html.py:109
+#: templates/themed_base.html:76 templates/themed_base.html.py:127
 msgid "Verse Authors"
 msgstr ""
 
@@ -167,7 +170,8 @@ msgstr ""
 msgid "Enter a few characters of the Author name"
 msgstr ""
 
-#: templates/author_index.html:27 templates/themed_base.html:59
+#: templates/author_index.html:27 templates/base.html:52
+#: templates/themed_base.html:67
 msgid "Search"
 msgstr ""
 
@@ -180,178 +184,247 @@ msgstr ""
 msgid "You searched for: %(q)s"
 msgstr ""
 
-#: templates/author_index.html:52
+#: templates/author_index.html:51
 msgid "Author Name"
 msgstr ""
 
-#: templates/author_index.html:53
+#: templates/author_index.html:52
 msgid "Joined Date"
 msgstr ""
 
-#: templates/author_index.html:54
+#: templates/author_index.html:53
 msgid "Verses written"
 msgstr ""
 
-#: templates/base.html:6 templates/themed_base.html:42
-msgid "Visaineri Analyzer"
-msgstr "Visaineri Analyser"
-
-#: templates/contact_us.html:3 templates/contact_us.html.py:17
-#: templates/themed_base.html:70 templates/themed_base.html.py:121
-msgid "Contact Us"
+#: templates/base.html:6 templates/base.html.py:45
+msgid "Visaineri Analyser"
 msgstr ""
 
-#: templates/contact_us.html:18
-msgid ""
-"\n"
-"For queries and comments regarding Visaineri, please use our Email address.\n"
+#: templates/base.html:41
+msgid "Submit"
 msgstr ""
 
-#: templates/contact_us.html:23
-msgid "Email Address"
+#: templates/base.html:46
+msgid "A tool to parse tamil poems"
 msgstr ""
 
-#: templates/contact_us.html:24
-msgid "Twitter"
-msgstr ""
-
-#: templates/contact_us.html:25
-msgid "Facebook"
-msgstr ""
-
-#: templates/index.html:3 templates/themed_base.html:66
-#: templates/themed_base.html.py:117
-msgid "Homepage"
-msgstr ""
-
-#: templates/index.html:34 templates/verse_edit.html:29
-msgid "Use Tamil Phonetic Keyboard"
-msgstr ""
-
-#: templates/index.html:40 templates/index.html.py:82
-#: templates/verse_edit.html:35 templates/verse_edit.html.py:71
-msgid "Hide Tamil Phonetic Keyboard"
-msgstr ""
-
-#: templates/index.html:55 templates/verse_detail.html:10
-#: templates/verse_edit.html:47 templates/verse_index.html:19
-msgid "Anonymous"
-msgstr ""
-
-#: templates/index.html:79 templates/verse_edit.html:68
-msgid "Toggle Rules for Punctuation"
-msgstr ""
-
-#: templates/index.html:89 templates/verse_edit.html:78
-msgid "Submit Verse"
-msgstr ""
-
-#: templates/index.html:95
-msgid "You need to create a Profile in order to upload new verses."
-msgstr ""
-
-#: templates/index.html:96 templates/themed_base.html:86
-msgid "Create Profile"
-msgstr ""
-
-#: templates/index.html:99
-msgid "In order to upload your Verse you need to be logged in"
-msgstr ""
-
-#: templates/index.html:100 templates/themed_base.html:101
-msgid "Login"
-msgstr ""
-
-#: templates/index.html:102
-msgid "Don't have an User account? Please Register here: "
-msgstr ""
-
-#: templates/index.html:103
-msgid "Register"
-msgstr ""
-
-#: templates/index.html:107 templates/verse_edit.html:85
-msgid "Rules for Punctuation"
-msgstr ""
-
-#: templates/index.html:109 templates/verse_edit.html:87
-msgid ""
-"There should not be any punctuation characters like full stop, comma, "
-"semicolon or exclamation mark."
-msgstr ""
-
-#: templates/index.html:110 templates/verse_edit.html:88
-msgid "Author Name/Signature should not be entered along with the verse."
-msgstr ""
-
-#: templates/themed_base.html:58
+#: templates/base.html:51 templates/themed_base.html:66
 msgid "Search Verse"
 msgstr ""
 
-#: templates/themed_base.html:58
+#: templates/base.html:51 templates/themed_base.html:66
 msgid "Enter a few words of the verse"
 msgstr ""
 
-#: templates/themed_base.html:59
+#: templates/base.html:52 templates/themed_base.html:67
 msgid "Start searching for Verses"
 msgstr ""
 
-#: templates/themed_base.html:67 templates/themed_base.html.py:118
-#: templates/verse_index.html:3
+#: templates/base.html:58
+msgid "Navigation"
+msgstr ""
+
+#: templates/base.html:60 templates/base.html.py:107 templates/index.html:4
+#: templates/themed_base.html:74 templates/themed_base.html.py:125
+msgid "Homepage"
+msgstr ""
+
+#: templates/base.html:61 templates/base.html.py:108
+#: templates/themed_base.html:75 templates/themed_base.html.py:126
+#: templates/verse_index.html:4
 msgid "Verses"
 msgstr ""
 
-#: templates/themed_base.html:80
+#: templates/base.html:64 templates/base.html.py:111
+#: templates/contact_us.html:3 templates/contact_us.html.py:15
+#: templates/themed_base.html:78 templates/themed_base.html.py:129
+msgid "Contact Us"
+msgstr ""
+
+#: templates/base.html:69 templates/themed_base.html:88
 msgid "Hi, "
 msgstr ""
 
-#: templates/themed_base.html:83
+#: templates/base.html:72 templates/themed_base.html:91
 msgid "View Profile"
 msgstr ""
 
-#: templates/themed_base.html:84
+#: templates/base.html:73 templates/themed_base.html:92
 msgid "Edit Profile"
 msgstr ""
 
-#: templates/themed_base.html:88
+#: templates/base.html:75 templates/index.html:90
+#: templates/themed_base.html:94
+msgid "Create Profile"
+msgstr ""
+
+#: templates/base.html:77 templates/themed_base.html:96
 msgid "Change Password"
 msgstr ""
 
-#: templates/themed_base.html:89
+#: templates/base.html:78 templates/themed_base.html:97
 msgid "Logout"
 msgstr ""
 
-#: templates/themed_base.html:94
+#: templates/base.html:83 templates/themed_base.html:102
 msgid "Member"
 msgstr ""
 
-#: templates/themed_base.html:98
+#: templates/base.html:87 templates/themed_base.html:106
 msgid "Username for Login"
 msgstr ""
 
-#: templates/themed_base.html:100
+#: templates/base.html:89 templates/themed_base.html:108
 msgid "Password for Login"
 msgstr ""
 
-#: templates/themed_base.html:104
+#: templates/base.html:90 templates/index.html:94
+#: templates/themed_base.html:109
+msgid "Login"
+msgstr ""
+
+#: templates/base.html:93 templates/themed_base.html:112
 msgid "New User?"
 msgstr ""
 
-#: templates/themed_base.html:124
+#: templates/base.html:94
+msgid "Forgot Password?"
+msgstr ""
+
+#: templates/base.html:115 templates/themed_base.html:132
 msgid ""
 "Visaineri.net is licensed under a <a rel=\"license\" href=\"http://"
 "creativecommons.org/licenses/by/2.5/in/\">Creative Commons Attribution 2.5 "
 "India License</a>."
 msgstr ""
 
-#: templates/themed_base.html:125
+#: templates/base.html:116
+msgid ""
+"Modified from <a href=\"http://www.freehtml5templates.com/papery-html5-and-"
+"css3-template-using-font-face\">Papery Template"
+msgstr ""
+
+#: templates/base.html:116
+msgid ""
+"Validate <a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
+"&amp; <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a></"
+"p>"
+msgstr ""
+
+#: templates/contact_us.html:17
+msgid ""
+"\n"
+"For queries and comments regarding Visaineri, please use our Email address.\n"
+msgstr ""
+
+#: templates/contact_us.html:21
+msgid "Email Address"
+msgstr ""
+
+#: templates/contact_us.html:22
+msgid "Twitter"
+msgstr ""
+
+#: templates/contact_us.html:23
+msgid "Facebook"
+msgstr ""
+
+#: templates/index.html:38 templates/index.html.py:82
+#: templates/verse_edit.html:29
+msgid "Use Tamil Phonetic Keyboard"
+msgstr ""
+
+#: templates/index.html:44 templates/index.html.py:52
+#: templates/verse_edit.html:35 templates/verse_edit.html.py:71
+msgid "Hide Tamil Phonetic Keyboard"
+msgstr ""
+
+#: templates/index.html:79 templates/verse_edit.html:68
+msgid "Toggle Rules for Punctuation"
+msgstr ""
+
+#: templates/index.html:86 templates/verse_edit.html:78
+msgid "Submit Verse"
+msgstr ""
+
+#: templates/index.html:89
+msgid "You need to create a Profile in order to upload new verses."
+msgstr ""
+
+#: templates/index.html:93
+msgid "In order to upload your Verse you need to be logged in"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Don't have an User account? Please Register here: "
+msgstr ""
+
+#: templates/index.html:97
+msgid "Register"
+msgstr ""
+
+#: templates/index.html:101 templates/verse_edit.html:85
+msgid "Rules for Punctuation"
+msgstr ""
+
+#: templates/index.html:103 templates/verse_edit.html:87
+msgid ""
+"There should not be any punctuation characters like full stop, comma, "
+"semicolon or exclamation mark."
+msgstr ""
+
+#: templates/index.html:104 templates/verse_edit.html:88
+msgid "Author Name/Signature should not be entered along with the verse."
+msgstr ""
+
+#: templates/search.html:5
+msgid "Search:"
+msgstr ""
+
+#: templates/search.html:18
+msgid "You searched for:"
+msgstr ""
+
+#: templates/search.html:21
+msgid "Search results:"
+msgstr ""
+
+#: templates/search.html:22
+#, python-format
+msgid ""
+"\n"
+"Found one verse.\n"
+msgid_plural ""
+"\n"
+"Found %(counter)s verses.\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/search.html:32 templates/verse_detail.html:10
+#: templates/verse_edit.html:47 templates/verse_index.html:21
+msgid "Anonymous"
+msgstr ""
+
+#: templates/search.html:32 templates/verse_index.html:21
+msgid "wrote,"
+msgstr ""
+
+#: templates/search.html:42
+msgid "No verse found"
+msgstr ""
+
+#: templates/themed_base.html:50
+msgid "Visaineri Analyzer"
+msgstr "Visaineri Analyser"
+
+#: templates/themed_base.html:133
 msgid ""
 "Design adapted from <a href=\"http://www.worldclasslasik.com\">new york "
 "lasik surgery</a> and <a href=\"http://www.getnetset.com\">cpa website "
 "design</a>"
 msgstr ""
 
-#: templates/themed_base.html:125
+#: templates/themed_base.html:133
 msgid ""
 "Validate <a href=\"http://validator.w3.org/check?uri=referer\">HTML5</a> "
 "&amp; <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"

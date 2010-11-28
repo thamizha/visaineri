@@ -1,29 +1,31 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
+{% load pagination_tags %}
 {% block title %}{% trans "Verses" %}{% endblock %}
 
-{% block themed_head %}
+{% block head %}
 <script type="text/javascript">
 $(document).ready(function (){
-    $('.menu li:nth-child(2)').addClass('current');
+    $('nav li:nth-child(2)').addClass('current');
 });
 </script>
 {% endblock %}
 
-{% block slider %}
-<div class="cs_wrapper">
-<div class="cs_slider">
+{% block content %}
+<section>
+{% autopaginate verses 5 %}
+{% paginate 3 %}
+<hr>
 {% for verse in verses %}
-<section class="cs_article">
-<div class="text">
-<pre class="verse">{{ verse.verse_text }}<br><span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span></pre>
+<article>
+<h3><span class="author">{% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span>&nbsp;{% trans "wrote," %}</h3>
+<pre class="verse">
+{{ verse.verse_text }}
+</pre>
 <a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
-</div>
-</section>
+</article>
+<hr>
 {% endfor %}
-</div>
-</div>
-{% endblock %}
-
-{% block main_article %}
+{% paginate 3 %}
+</section>
 {% endblock %}

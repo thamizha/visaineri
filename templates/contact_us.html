@@ -1,20 +1,18 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% block title %}{% trans "Contact Us" %}{% endblock %}
 
-{% block disable_content_slider %}{% endblock %}
-
-{% block themed_head %}
+{% block head %}
 <script type="text/javascript">
 $(document).ready(function (){
-    $('.menu li:nth-child(5)').addClass('current');
+    $('nav li:nth-child(5)').addClass('current');
 });
 </script>
 {% endblock %}
 
-{% block slider %}
+{% block content %}
 <section>
-<header>{% trans "Contact Us" %}</header>
+<h2>{% trans "Contact Us" %}</h2>
 <p>
 {% blocktrans %}
 For queries and comments regarding Visaineri, please use our Email address.
@@ -26,8 +24,4 @@ For queries and comments regarding Visaineri, please use our Email address.
 </pre>
 </p>
 </section>
-{% endblock %}
-
-{% block main_article %}
-
 {% endblock %}

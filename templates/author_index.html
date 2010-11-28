@@ -1,15 +1,13 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% load pagination_tags %}
 
 {% block title %}{% trans "Verse Authors" %}{% endblock %}
 
-{% block disable_content_slider %}{% endblock %}
-
-{% block themed_head %}
+{% block head %}
 <script type="text/javascript">
 $(document).ready(function (){
-    $('.menu li:nth-child(3)').addClass('current');
+    $('nav li:nth-child(3)').addClass('current');
     {% if q %}
     $('#author_searchfield').attr('value', '{{ q }}');
     {% endif %}
@@ -17,8 +15,8 @@ $(document).ready(function (){
 </script>
 {% endblock %}
 
-{% block slider %}
-<section>
+{% block content %}
+<!--section>
 <header>{% trans "Verse Authors" %}</header>
 <p>{% blocktrans %}This page contains the list of all Authors who have written Verses{% endblocktrans %}</p>
 <div id="author_search_box">
@@ -30,10 +28,7 @@ $(document).ready(function (){
 {% if q %}
 {% blocktrans %}You searched for: {{q}}{% endblocktrans %}
 {% endif %}
-</section>
-{% endblock %}
-
-{% block main_article %}
+</section-->
 <section id="authors">
 {% if q %}
 {% autopaginate found_authors 15 %}
@@ -47,7 +42,9 @@ $(document).ready(function (){
 {% paginate %}
 {% else %}
 {% autopaginate authors 15 %}
-<table class="authors_table">
+{% paginate %}
+<hr>
+<table class="authors_table" border="1">
 <tr>
 <th>{% trans "Author Name" %}</th>
 <th>{% trans "Joined Date" %}</th>
@@ -55,12 +52,13 @@ $(document).ready(function (){
 </tr>
 {% for author in  authors %}
 <tr>
-   <td style="text-align:left"><a href="{% url author_detail author.id %}">{{ author }}</a></td>
+   <td class="author_name"><a href="{% url author_detail author.id %}">{{ author }}</a></td>
    <td>{% if author.user %}{{ author.user.date_joined }}{% else %}-{% endif %}</td>
    <td>{{ author.verses.count }}</td>
 </tr>
 {% endfor %}
 </table>
+<hr>
 {% paginate %}
 {% endif %}
 <!--ul class="authors_list">

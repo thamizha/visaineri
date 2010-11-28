@@ -58,7 +58,8 @@ def author_index(request):
 
 def author_detail(request, id):
     author = get_object_or_404(Author, pk=id)
-    return render_to_response('author_detail.html', {'author': author}, context_instance = RequestContext(request))
+    verses = author.verses.all()
+    return render_to_response('author_detail.html', {'author': author, 'verses': verses}, context_instance = RequestContext(request))
     
 @login_required
 def author_edit(request, id):
@@ -107,4 +108,4 @@ def search(request):
         found_verses = Verse.objects.filter(verse_text__icontains=q).order_by('-publishing_date')
         return render_to_response('search.html', { 'q':q, 'found_verses': found_verses}, context_instance = RequestContext(request))
     else:
-        return HttpResponse("Under construction")
+        return HttpResponseRedirect(reverse('home_page'))

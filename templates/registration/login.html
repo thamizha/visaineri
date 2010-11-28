@@ -2,7 +2,7 @@
 {% load i18n %}
 {% block title %} {% trans "Log In" %} {% endblock %}
 
-{% block content %}
+{% block auth_content %}
 {% if form.errors %}
     <div class="errors">
         <p>{% trans "Errors while submitting form" %}</p>

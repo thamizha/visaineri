@@ -1,27 +1,12 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
+{% load pagination_tags %}
 
 {% block title %}{{ author.name }}{% endblock %}
 
-{% block slider %}
-<div class="cs_wrapper">
-<div class="cs_slider">
-{% for verse in author.verses.all %}
-<section class="cs_article">
-<div class="text">
-<header>{% blocktrans %}Verses written by {{ author }}:{% endblocktrans %}</header>
-<pre class="verse">{{ verse.verse_text }}</pre>
-<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
-</div>
-</section>
-{% endfor %}
-</div>
-</div>
-{% endblock %}
-
-{% block main_article %}
+{% block content %}
 <section id="biography">
-<header>{{ author }} {% if request.user.is_authenticated %}{% ifequal author.id request.user.get_profile.id %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endifequal %}{% else %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endif %}</header>
+<h2>{{ author }} {% if request.user.is_authenticated %}{% ifequal author.id request.user.get_profile.id %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endifequal %}{% else %}[ <a href="{% url author_edit author.id %}">{% trans "Edit" %}</a> ]{% endif %}</h2>
 {% if author.biography %}
 {% autoescape off %}
 {{ author.biography }}
@@ -30,4 +15,22 @@
 {% trans "No information about the author is available." %}
 {% endif %}
 </section>
+<section id="author_verses">
+<h2>{% blocktrans %}Verses written by {{ author }}:{% endblocktrans %}</h2>
+{% autopaginate verses 5 %}
+{% paginate 3 %}
+<hr>
+{% for verse in verses %}
+<article>
+<pre class="verse">
+{{ verse.verse_text }}
+</pre>
+<a class="readmore" href="{% url verse_detail verse.id %}">{% trans "Analysis Results" %}</a>
+</article>
+<hr>
+{% endfor %}
+{% paginate 3 %}
+</section>
 {% endblock %}
+
+

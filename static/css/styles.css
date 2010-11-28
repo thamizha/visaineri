@@ -1,0 +1,401 @@
+/* reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* render html5 elements as block */
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+background: #FAEFDB;
+font-family: Ubuntu, Verdana, Arial, Helvetica, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: justify;
+line-height: 18px;
+}
+	
+/* layout */
+
+#container {
+float: left;
+width: 900px;
+}
+
+#content {
+overflow: hidden;
+}
+
+#sidebar {
+float:left;
+width: 280px;
+margin-top: 20px;
+}
+
+#main,
+#wrapper {
+margin: 20px auto;
+width: 940px;
+}
+
+#searchbar, #language_selection {
+float: right;
+padding-right: 30px;
+padding-top: 20px;
+}
+#wrapper {
+background: #FDDB9E url('../images/oldpaper.jpg') repeat-y;
+padding: 20px 20px;
+-webkit-box-shadow: 3px 3px 7px #777;
+-moz-box-shadow: 3px 3px 7px #777;
+}
+
+/* basics */
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	src: url('../fonts/Ubuntu-B.eot');
+	src: local('Ubuntu Bold'), local('Ubuntu'), url('../fonts/Ubuntu-B.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	src: url('../fonts/Ubuntu-R.eot');
+	src: local('Ubuntu Regular'), local('Ubuntu'), url('../fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+a {
+color:#333;
+text-decoration: underline;
+}
+
+a:hover {
+background-color: #B36614;
+color: #FAEFDB;
+text-decoration: none;
+}
+	
+h1,h2,h3,h4,h5,h6 {
+font-weight: bold;
+clear: both;
+color: #764715;
+}
+
+hr {
+background-color: #764715;
+border: 0;
+height: 1px;
+margin-bottom: 18px;
+clear: both;
+}
+
+p {
+margin-bottom: 18px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* header */
+
+header {
+width: 932px;
+height: 200px;
+font-weight: bold;
+background-image: url('../images/cropped_tamil_script_new.jpg');
+background-repeat: no-repeat;
+-webkit-box-shadow: 0px 0px 30px #000;
+-moz-box-shadow: 0px 0px 30px #000;
+}
+
+header h1 {
+position: absolute;
+top: 100px;
+float: left;
+margin: 0 0 0 20px;
+width: 700px;
+font-size: 50px;
+}
+
+header h1 a {
+color: #764715;
+text-decoration: none;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+header h1 a:hover {
+text-shadow: none;
+}
+
+header h2 {
+position: absolute;
+top: 160px;
+float: left;
+margin: 0 0 0 20px;
+width: 700px;
+color: #333;
+font-style: italic;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+header h2 a:hover {
+text-shadow: none;
+}
+
+/* nav */
+
+nav {
+font-size: 16px;
+font-weight: bold;
+margin-left: 12px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+}
+
+nav a {
+display: block;
+text-decoration: none;
+color: #333;
+padding: 0 10px;
+line-height: 38px;
+}
+
+nav li.current a {
+background: #B36614;
+}
+
+nav li:hover a {
+color: #FAEFDB;
+background: #764715;
+}
+
+
+/* main content */
+
+#main {
+overflow: hidden;
+padding: 0 0 0 0;
+}
+
+#content {
+width: 600px;
+margin: 36px 0;
+color: #444;
+font-size: 16px;
+line-height: 24px;
+padding-left: 10px;
+border-left: 1px #764715 solid;
+}
+
+article {
+padding: 10px;
+}
+
+article img {
+border: none;
+-webkit-box-shadow: 3px 3px 7px #777;
+-moz-box-shadow: 3px 3px 7px #777;
+}
+
+#login {
+   color: #333;
+}
+#login label {
+   float: left;
+   clear: both;
+   width: 100px;
+   padding-left: 30px;
+   padding-top: 9px;
+}
+#login input[type='text'], #login input[type='password'] {
+   margin-top: 5px;
+   height: 25px;
+   width: 120px;
+}
+#login input[type='submit'] {
+   margin: 5px 0 0 120px;
+   width: 70px;
+   text-align: center;
+}
+
+#login .new_user_link {
+   margin-right: 10px;
+   float: right;
+}
+#login .forgot_password_link {
+   margin-left: 30px;
+   float: left;
+}
+
+#logged_in_menu p {
+   margin-left: 30px;
+}
+#content p,
+#content ul,
+#content ol,
+#content hr {
+margin-bottom: 24px;
+}
+
+#content ul ul,
+#content ol ol,
+#content ul ol,
+#content ol ul {
+margin-bottom: 0;
+}
+
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+color: #764715;
+margin: 0 0 20px 0;
+line-height: 1.5em;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+#content h1:hover,
+#content h2:hover,
+#content h3:hover,
+#content h4:hover,
+#content h5:hover,
+#content h6:hover {
+text-shadow: none;
+}
+
+img.language_icon {
+vertical-align: bottom;   
+}
+
+.alignleft,
+img.alignleft {
+display: inline;
+float: left;
+margin-right: 24px;
+margin-top: 4px;
+}
+
+.alignright,
+img.alignright {
+display: inline;
+float: right;
+margin-left: 24px;
+margin-top: 4px;
+}
+
+.aligncenter,
+img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignleft, img.alignright, img.aligncenter {
+margin-bottom: 12px;
+}
+
+/* sidebar and footer widget blocks */
+
+aside h3, nav h3 {
+font-size: 20px;
+height: 32px;
+padding: 25px 0 0 30px;
+background-image: url('../images/tornpaper.png');
+background-repeat: no-repeat;
+color: #F7D08B;
+}
+
+aside ul {
+list-style: square inside;
+margin: 0 0 40px 20px;
+line-height: 1.8em;
+}
+
+aside ul li {
+font-size: 16px;
+}
+
+footer {
+margin-bottom: 20px;
+clear:both;
+padding: 18px 20px;
+background-color: rgba(0,0,0,0.2);
+color: #444;
+text-align: center;
+}
+
+#footer-navigation li {
+   list-style: none;
+   display: inline;
+   padding-right: 30px;
+}
+
+#footer-navigation li:last-child {
+   padding-right: 0px;
+}
+
+#copyright {
+   clear: both;
+}
+
+#copyright img {
+   border-width: 0;
+}
+
+.authors_table {
+   text-align: center;
+   width: 100%;
+}
+
+.authors_table th {
+   background-color: rgba(179,102,20,0.8);
+   color: #ffe;
+}
+.authors_table tr:nth-child(odd) {
+   background-color: rgba(0,0,0,0.2);
+}
+
+.authors_table tr:nth-child(even) {
+   background-color: rgba(0,0,0,0.1);
+}
+
+.authors_table .author_name {
+   text-align: left;
+}
+
+/* Semantic classes */
+.author {
+   
+}
+.verse {
+   border: 1px solid black;
+   background-color: rgba(255,255,255,0.5);
+}
+.pagination {
+   float: right;
+}
+.pagination .page, .pagination .prev, .pagination .next {
+   padding: 5px;
+   text-align: center;
+   background-color: rgba(0,0,0,0.3);
+}
+.pagination .disabled {
+   display: none;
+}
+.pagination .current {
+   background-color: inherit;
+   font-weight: bold;
+}
+

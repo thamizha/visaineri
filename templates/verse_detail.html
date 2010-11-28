@@ -1,24 +1,21 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% block title %}{{ verse }}{% endblock %}
 
-{% block disable_content_slider %}{% endblock %}
-
-{% block slider %}
+{% block content %}
 <section>
-<header>{% trans "Verse" %} {% if request.user.is_authenticated %}{% ifequal verse.author.id request.user.get_profile.id %}[ <a href="{% url verse_edit verse.id %}">{% trans "Edit" %}</a> ]{% endifequal %}{% else %}[ <a href="{% url verse_edit verse.id %}">{% trans "Edit" %}</a> ]{% endif %} </header>
-<pre class="verse">{{ verse.verse_text }}<br><span class="author">- {% if verse.author %}<a href="{% url author_detail verse.author.id %}">{{ verse.author}}</a>{% else %}({% trans "Anonymous" %}){% endif %}</span></pre>
-</section>
-{% endblock %}
-
-{% block main_article %}
-<section id="description">
-   <header>{% trans "Details" %}</header>
+<h2>{% trans "Verse" %} {% if request.user.is_authenticated %}{% ifequal verse.author.id request.user.get_profile.id %}[ <a href="{% url verse_edit verse.id %}">{% trans "Edit" %}</a> ]{% endifequal %}{% else %}[ <a href="{% url verse_edit verse.id %}">{% trans "Edit" %}</a> ]{% endif %} </h2>
+<article>
+<pre class="verse">{{ verse.verse_text }}</pre>
+</article>
+<section id="verse_details">
+   <h2>{% trans "Details" %}</h2>
+   <p><b>{% trans "Verse Author" %} : </b>{{ verse.author }}</p>
    <p><b>{% trans "Verse Publishing Date" %} : </b>{{ verse.publishing_date }}</p>
    <p><b>{% trans "Verse Revision Date" %} : </b>{{ verse.revision_date }}</p>
 </section>
 <section id="parsing_results">
-    <header>{% trans "Analysis Results" %}</header>
+    <h2>{% trans "Analysis Results" %}</h2>
     <p>{% trans "Parsing Status" %}: {{ verse.get_parsing_status_display }}</p>
     {% if verse.result %}
       <pre style="padding: 10px 50px; background-color: #eeb;">
@@ -27,7 +24,7 @@
     {% endif %}
 </section>
 <section id="disqus_comments">
-<header>{% trans "User Comments" %}</header>
+<h2>{% trans "User Comments" %}</h2>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   /**
@@ -41,5 +38,6 @@
 </script>
 <noscript>{% blocktrans %}Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=visaineri8001">comments powered by Disqus.</a>{% endblocktrans %}</noscript>
 <a href="http://disqus.com" class="dsq-brlink">{% blocktrans %}Comments powered by <span class="logo-disqus">Disqus</span>{% endblocktrans %}</a>
+</section>
 </section>
 {% endblock %}

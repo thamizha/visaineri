@@ -1,17 +1,11 @@
-{% extends "themed_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 
 {% block title %}{{ user.username }}{% endblock %}
 
-{% block disable_content_slider %}{% endblock %}
-
-{% block slider %}
-
-{% endblock %}
-
-{% block main_article %}
+{% block content %}
 <section>
-<header>{% trans "New Author Form" %}</header>
+<h2>{% trans "New Author Form" %}</h2>
 <form action="" method="POST">
 {% csrf_token %}
 <table>
