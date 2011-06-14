@@ -1,5 +1,3 @@
-parsers
 *.json
 localsettings.py
-static/compass/.sass-cache
 static/compass/.sass-cache
