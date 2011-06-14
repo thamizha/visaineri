@@ -1,3 +1,6 @@
 *.json
 localsettings.py
 static/compass/.sass-cache
+*.pyc
+*.pyo
+*~
