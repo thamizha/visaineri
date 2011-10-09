@@ -12,7 +12,7 @@ Pre-requisites
 
 These can be installed like so:
 
-    sudo easy_install django django-pagination south pyparsing
+    sudo easy_install django django-pagination south pyparsing beautifulsoup
 
 Getting the code
 ----------------
