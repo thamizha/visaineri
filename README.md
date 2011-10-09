@@ -7,7 +7,8 @@ Pre-requisites
 * [Django](https://www.djangoproject.com/)
 * [Django Pagination](http://code.google.com/p/django-pagination/)
 * [Django South](http://south.aeracode.org/)
-* [PyParsing](http://pyparsing.wikispaces.com/)
+* [PyParsing](http://pyparsing.wikispaces.coms
+* [Beautiful soup](http://www.crummy.com/software/BeautifulSoup/)
 
 These can be installed like so:
 
